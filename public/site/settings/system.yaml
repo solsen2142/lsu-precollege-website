@@ -1,0 +1,8 @@
+app_key: apX0Twq4CyQWjN0qcw9DL1wotFg8yQDF
+yaml_parser: symfony
+locales:
+  en:
+    full: en_US
+    name: English
+    url: 'http://homestead.test/'
+timezone: America/Chicago

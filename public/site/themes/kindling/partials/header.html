@@ -1,0 +1,175 @@
+<div id="tulane">
+    <header class="siteHeader filter"  style="background-image: url('/assets/img/desert.jpg'); background-position: 54% 44%" >
+
+    <div class="flex p-4 items-center md:hidden relative z-50" :class="[{ 'justify-end': $store.getters.mobileNav }, {'justify-between': !$store.getters.mobileNav}]">
+        <div style="width: 300px;" v-if="!$store.getters.mobileNav">
+            <a href="/"><img src="/assets/img/lsu_logo_white.png"/></a>
+        </div>
+        <button class="hamburger hamburger--collapse fadeIn slow" :class="{ 'is-active': $store.getters.mobileNav }" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="true" @click="$store.dispatch('toggleMobileNav')">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>       
+    </div>
+
+    <div class="max-w-2xl mx-auto hidden md:flex md:justify-between items-end mb-2 px-4 relative filter__top">
+        <div class="tulaneLogo">
+            <a href="/"><img style="height:35px" src="/assets/img/lsu_logo_white.png"/></a>
+        </div>
+                <div class="hidden md:flex py-4 justify-between items-end text-center ">
+            
+            <a href="/apply-now" class="btn btn--focused mr-4">Apply Now</a>
+
+
+            <div class="flex flex-col items-start">
+                <span class="text-xs text-white opacity-50 mb-1 ml-1">Want to learn more?</span>
+                <a href="/request-info" class="btn btn--focused btn--gold">Request Info</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="md:mx-4">
+        <nav class='headerNav max-w-2xl mx-auto' :class="{ 'bg-green-dark is-active': $store.getters.mobileNav }">
+    <div class="md:hidden flex items-center mb-2">
+        <img style="height:35px" src="/assets/img/lsu_logo_white.png"/>
+        <div class="ml-4">
+            
+        </div>
+    </div>
+    
+    <div id="mobile-nav" class="mobile-nav md:hidden">
+        <ul class="list-reset mb-0 mt-0">
+        <li class="dropdown">
+        <a href="/courses">Courses</a>
+                <ul>
+                        <li><a href="/all-courses"><span>All Courses</span></a></li>
+                        <li><a href="/courses/enrichment"><span>Enrichment</span></a></li>
+                        <li><a href="/courses/college-credit"><span>College Credit</span></a></li>
+            
+        </ul>
+            </li>
+        <li class="dropdown">
+        <a href="/areas-of-study">Areas of Study</a>
+                <ul>
+                        <li><a href="/areas-of-study/stem"><span>STEM</span></a></li>
+                        <li><a href="/areas-of-study/womens-leadership"><span>Women's Leadership</span></a></li>
+                        <li><a href="/areas-of-study/architecture"><span>Architecture</span></a></li>
+                        <li><a href="/areas-of-study/humanities"><span>Humanities</span></a></li>
+            
+        </ul>
+            </li>
+        <li class="dropdown">
+        <a href="/experience">Experience</a>
+                <ul>
+                        <li><a href="/experience/residential"><span>Residential</span></a></li>
+                        <li><a href="/experience/residential/pre-arrival-information"><span>Pre-Arrival Information</span></a></li>
+                        <li><a href="/experience/day-session"><span>Day Session</span></a></li>
+                        <li><a href="/experience/fun-activities"><span>Extracurricular Activities</span></a></li>
+                        <li><a href="/experience/student-success"><span>Student Success</span></a></li>
+                        <li><a href="/experience/faqs"><span>Frequently Asked Questions</span></a></li>
+            
+        </ul>
+            </li>
+        <li >
+        <a href="/tuition">Tuition</a>
+            </li>
+        <li >
+        <a href="/calendar">Calendar</a>
+            </li>
+        <li >
+        <a href="/undergraduates">Undergraduates</a>
+            </li>
+    
+</ul>
+    </div>
+    
+    <ul class="list-reset mb-0 mt-0">
+        <li class="dropdown">
+        <a href="/courses">Courses</a>
+                <ul>
+                        <li><a href="/all-courses"><span>All Courses</span></a></li>
+                        <li><a href="/courses/enrichment"><span>Enrichment</span></a></li>
+                        <li><a href="/courses/college-credit"><span>College Credit</span></a></li>
+            
+        </ul>
+            </li>
+        <li class="dropdown">
+        <a href="/areas-of-study">Areas of Study</a>
+                <ul>
+                        <li><a href="/areas-of-study/stem"><span>STEM</span></a></li>
+                        <li><a href="/areas-of-study/womens-leadership"><span>Women's Leadership</span></a></li>
+                        <li><a href="/areas-of-study/architecture"><span>Architecture</span></a></li>
+                        <li><a href="/areas-of-study/humanities"><span>Humanities</span></a></li>
+            
+        </ul>
+            </li>
+        <li class="dropdown">
+        <a href="/experience">Experience</a>
+                <ul>
+                        <li><a href="/experience/residential"><span>Residential</span></a></li>
+                        <li><a href="/experience/residential/pre-arrival-information"><span>Pre-Arrival Information</span></a></li>
+                        <li><a href="/experience/day-session"><span>Day Session</span></a></li>
+                        <li><a href="/experience/fun-activities"><span>Extracurricular Activities</span></a></li>
+                        <li><a href="/experience/student-success"><span>Student Success</span></a></li>
+                        <li><a href="/experience/faqs"><span>Frequently Asked Questions</span></a></li>
+            
+        </ul>
+            </li>
+        <li >
+        <a href="/tuition">Tuition</a>
+            </li>
+        <li >
+        <a href="/calendar">Calendar</a>
+            </li>
+        <li >
+        <a href="/undergraduates">Undergraduates</a>
+            </li>
+    
+</ul>
+
+    <footer class="flex py-4 justify-between text-center md:hidden">
+                <a href="/apply-now" class="btn btn--focused btn--rounded-none mr-4">Apply Now</a>
+        <a href="/request-info" class="btn btn--focused btn--gold btn--rounded-none">Request Info</a>
+        
+    </footer>
+</nav>
+    </div>
+
+
+        <!-- form -->
+<div class="form-background">
+  <div class="container">
+    <div class="form-container">
+      <script type="text/javascript" id="jsFastForms" src="https://sfapi.formstack.io/FormEngine/Scripts/Main.js?d=zu6duPqhIlgiK1iHvKCBeJfGuamjM_xWKsbv5uZIOqH2PCtV0EwKsFnUUQ-c0b9J"></script>
+      <!-- Privacy Modal -->
+      
+
+<!-- Modal -->
+<div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privacyModalLabel">LSU Privacy Agreement</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        By checking the box and submitting this form, I authorize that all information provided on this form may be shared with Louisiana State University and its affiliated partners to facilitate communication of relevant information related to your request, including your consent to use automated technology to call and/or send SMS text messages to the phone number provided. This information will be retained as long as necessary to provide prospective student services and will be removed when no longer required. To learn more about privacy at LSU, please see the LSU Privacy Statement: <a href="https://lsu.edu/privacy/" target="_blank">LSU Privacy Statement</a>.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+<div class="filter__greyFilter"></div>
+<div class="filter__gradiantFilterX"></div>
+    
+</header>

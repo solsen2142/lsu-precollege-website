@@ -1,0 +1,7 @@
+# Ignore build folders
+/node_modules
+/vendor
+
+# Ignore lock and log files
+yarn.lock
+yarn-error.log
