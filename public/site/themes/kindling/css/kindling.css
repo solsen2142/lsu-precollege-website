@@ -12,7 +12,6 @@ body {
 
 article,
 aside,
-footer,
 header,
 nav,
 section {
@@ -292,7 +291,7 @@ h3 {
 
 .siteHeader {
     position: relative;
-    background-color: #030;
+    background-color: #f1eedb;
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat
@@ -300,9 +299,9 @@ h3 {
 
 @media (min-width:768px) {
     .siteHeader {
-        background-color: #030
+        background-color: #f1eedb
     }
-    .siteHeader .tulaneLogo {
+    .siteHeader .lsuLogo {
         width: 400px
     }
 }
@@ -337,8 +336,14 @@ h3 {
     padding-bottom: 5vh
 }
 
+.navContainer {
+	background-color: #461d7c;
+	z-index: 30;
+	position: relative;
+}
+
 .headerNav {
-    padding: .75rem;
+    padding: rem;
     display: none;
     z-index: 30;
     position: relative
@@ -422,7 +427,6 @@ h3 {
     text-transform: none;
     font-weight: 400;
     padding-left: 1.5rem;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxMnB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9IjAgMCAxMiAxMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5GaWxsIDIzMzwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iTmF2aWdhdGlvbi8tTW9iaWxlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQuMDAwMDAwLCAtMTY3LjAwMDAwMCkiIGZpbGw9IiNDQzk5MDAiPiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMC41OTQyMTI0LDE3NS45NTg3MjMgTDIwLjU5NDIxMjQsMTY3IEwxOS40MDU3ODc2LDE2NyBMMTkuNDA1Nzg3NiwxNzUuOTU4NzIzIEwxNS44NDA1MTM0LDE3Mi4zNzE3NjYgTDE1LDE3My4yMTczOTEgTDE5LjU3OTg5MTksMTc3LjgyNDgzNyBDMTkuNjk1NzYzMywxNzcuOTQxNzEyIDE5Ljg0Nzg4MTYsMTc4IDIwLDE3OCBDMjAuMTUyMTE4NCwxNzggMjAuMzA0MjM2NywxNzcuOTQxNzEyIDIwLjQyMDEwODEsMTc3LjgyNDgzNyBMMjUsMTczLjIxNzM5MSBMMjQuMTU5NDg2NiwxNzIuMzcxNzY2IEwyMC41OTQyMTI0LDE3NS45NTg3MjMgWiIgaWQ9IkZpbGwtMjMzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMC4wMDAwMDAsIDE3Mi41MDAwMDApIHJvdGF0ZSgtOTAuMDAwMDAwKSB0cmFuc2xhdGUoLTIwLjAwMDAwMCwgLTE3Mi41MDAwMDApICI+PC9wYXRoPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);
     background-repeat: no-repeat;
     background-position: 0
 }
@@ -440,7 +444,7 @@ h3 {
     .headerNav {
         -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-        background-color: #fff;
+        background-color: #461d7c;
         padding: 1px
     }
     .headerNav ul {
@@ -454,10 +458,14 @@ h3 {
     }
     .headerNav ul .is-active a,
     .headerNav ul a {
-        color: #030;
-        padding: 1.5rem;
+        color: #d29f13;
+        padding: 1rem;
         display: inline-block;
         position: relative
+    }
+    .headerNav ul a:hover {
+    	text-decoration: none;
+    	color: #fff;
     }
     .headerNav ul a.is-active {
         background-color: #f5f5f5;
@@ -484,14 +492,15 @@ h3 {
     }
     .headerNav ul li.is-active ul a:hover,
     .headerNav ul li:hover ul a:hover {
-        background-color: #f5f5f5;
-        color: #030
+        background-color: #461d7c;
+        color: #ffffff;
+        text-decoration:none
     }
     .headerNav ul .is-active ul,
     .headerNav ul ul {
         position: absolute;
         left: 0;
-        background-color: #fff;
+        background-color: #461d7c;
         -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .12);
         box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .12)
     }
@@ -519,124 +528,102 @@ h3 {
     display: block
 }
 
-.siteFooter {
-    background-color: #030;
-    padding: 1.5rem;
-    padding-bottom: 4rem;
-    color: #fff
+.hubspot-form {
+	color: #fdd023;
+	font-size:2rem;
+	text-align: center;
+	line-height: 2.2rem;
 }
 
-.siteFooter a {
-    color: #fafafa;
-    text-decoration: none
-}
-
-.siteFooter a:hover {
-    color: #306353
-}
-
-.siteFooter a.tulane-pre-college:hover {
-    color: #aecec4
-}
-
-.siteFooter p {
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-    margin-top: .25rem
-}
-
-.siteFooter ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 100%
-}
-
-.socialNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    margin-bottom: 2rem
-}
-
-.socialNav svg {
-    width: 2rem;
-    margin-right: 1rem
-}
-
-@media (min-width:576px) {
-    .socialNav svg {
-        width: 1rem;
-        margin-right: .5rem
-    }
-}
-
-.footerNav {
-    -webkit-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 30px;
-    column-gap: 30px
-}
-
-.footerNav>li {
-    margin-bottom: 2rem;
-    -webkit-column-break-inside: avoid;
-    break-inside: avoid-column;
-    display: table
-}
-
-@media (min-width:576px) {
-    .footerNav li {
-        font-size: .875rem
-    }
-}
-
-.footerNav li a {
-    padding-bottom: .25rem;
-    margin-bottom: .5rem;
-    text-transform: uppercase;
-    font-size: .75rem;
-    font-weight: 300;
-    letter-spacing: .05em;
-    border-bottom-width: 2px;
-    border-color: #306353
-}
-
-.footerNav li a:hover {
+footer {
+  background-color: #474747;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 40px 0;
+  line-height: 1.4rem; }
+  footer b {
+  	font-weight: bold;
+  }
+  footer h3 {
+    padding-bottom: 1rem;
+    font-weight: 400; }
+  footer a:link, footer a:active, footer a:visited {
     color: #fff;
-    opacity: .5
-}
+    font-weight: bold }
+  footer a:hover {
+    color: #eec12a;
+    text-decoration: underline; }
 
-.footerNav li ul {
-    width: 100%
-}
+.footer-lsu {
+  background-color: #461d7c;
+  padding: .5rem; }
 
-.footerNav li ul li {
-    margin-bottom: .25rem;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    width: 100%
-}
+.footer-lsu img {
+    height: 30px; }
 
-.footerNav li ul a {
-    border-bottom-width: 0;
-    text-transform: none
-}
+.footer-container {
+  display: flex;
+  flex-direction: column; }
 
-.siteFooter__copyright {
-    font-size: .75rem
-}
+.footer-column-1 {
+  width: 100%;
+  order: 2;
+  padding-bottom: 2rem; }
+
+.footer-column-2 {
+  width: 100%;
+  order: 1;
+  padding-bottom: 2rem; }
+
+.footer-column-3 {
+  width: 100%;
+  order: 3;
+  padding-bottom: 2rem; }
+
+.social-icon {
+  width: 32px; }
+
+.social-icon-pad {
+  margin-right: 10px; }
+
+.hashtag {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #eec12a;
+  margin: 30px 0 0 0; }
+
+@media only screen and (min-width: 768px) {
+	footer {
+    font-size: .8rem; }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0; }
+  .footer-column-1 {
+    width: 33.33%;
+    order: 1; }
+  .footer-column-2 {
+    width: 33.33%;
+    text-align: center;
+    order: 2; }
+  .footer-column-3 {
+    width: 33.33%;
+    text-align: right;
+    order: 3; }
+ }
+
+ @media only screen and (min-width: 992px){
+   .social-icon {
+    width: 40px; }
+ }
 
 .btn.btn {
     padding: .75rem 1rem;
     border-radius: .65rem;
     background-color: #55812b;
     border-style: none;
-    color: #fff;
+    color: #461d7c;
     text-decoration: none
 }
 
@@ -649,13 +636,12 @@ h3 {
 }
 
 .btn.btn--focused {
-    text-transform: uppercase;
     letter-spacing: .05em
 }
 
 .btn.btn--focused {
-    padding: .75rem 2rem;
-    font-size: .75rem
+    padding: .4rem 2rem;
+    font-size: .9rem
 }
 
 .btn.btn--icon {
@@ -672,47 +658,13 @@ h3 {
     margin-right: .5rem
 }
 
-.btn.btn--facebookWhite {
-    background-color: #fff;
-    border-radius: .25rem;
-    padding-left: .75rem;
-    padding-right: .75rem;
-    color: #0084ff;
-    text-transform: none;
-    font-weight: 500;
-    text-decoration: none
-}
-
-.btn.btn--facebookWhite:hover {
-    opacity: 1;
-    background-color: #0084ff;
-    color: #fff
-}
-
-.btn.btn--facebookBlue {
-    background-color: #0084ff;
-    border-radius: .25rem;
-    padding-left: .75rem;
-    padding-right: .75rem;
-    color: #fff;
-    text-transform: none;
-    font-weight: 500;
-    text-decoration: none
-}
-
-.btn.btn--facebookBlue:hover {
-    opacity: 1;
-    background-color: #fff;
-    color: #0084ff
-}
-
 .btn.btn--wide {
     padding-left: 1.5rem;
     padding-right: 1.5rem
 }
 
 .btn.btn--gold {
-    background-color: #d9b214
+    background-color: #d29f13
 }
 
 .btn.btn--gold:hover {
@@ -2720,6 +2672,14 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   .ff-submit-btn .ff-btn-submit {
     width: 47.5%; } }
 
+.form-background {
+	z-index: 30;
+}
+
+.form-container {
+	z-index: 20;
+}
+
 @media only screen and (min-width: 992px) {
   .form-title {
     text-align: center;
@@ -2731,7 +2691,7 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     width: 100%; } 
   .form-background {
     background-color: rgba(0, 0, 0, 0);
-    padding: 0;
+    padding-left: 5rem;
 	}
   .form-container {
     position: relative;
@@ -2739,7 +2699,7 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     width: 300px;
     height: 600px;
     padding: 0 20px;
-    float: right;
+    float: left;
     display: flex;
     align-items: center; 
 	color: #fff;

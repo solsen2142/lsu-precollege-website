@@ -180,7 +180,7 @@
             }) : t[e] = n, t
         }
         new o.a((p(r = {
-            el: "#tulane",
+            el: "#lsu",
             store: d.a,
             components: {
                 CookieConsent: s.a,
@@ -1748,7 +1748,7 @@
             mounted: function() {
                 this.$nextTick(function() {
                     var t = document.createElement("script");
-                    t.setAttribute("id", "slate_form"), t.async = 1, t.src = "https://apply.tulane.edu/register/?id=f4fd69b3-94e0-480c-826d-49fd486f87d8&output=embed&div=form_f4fd69b3-94e0-480c-826d-49fd486f87d8" + (location.search.length > 1 ? "&" + location.search.substring(1) : "");
+                    t.setAttribute("id", "slate_form"), t.async = 1, t.src = "lsuprecollege.com/apply";
                     var e = document.getElementsByTagName("script")[0];
                     e.parentNode.insertBefore(t, e)
                 })
