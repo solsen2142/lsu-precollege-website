@@ -2,10 +2,10 @@
     <header class="siteHeader filter"  style="background-image: url('/assets/img/headerBackgrounds{{ url }}/background.jpg'); background-position: 54% 44%;" >
 
     <div class="flex p-4 items-center md:hidden relative z-50" :class="[{ 'justify-end': $store.getters.mobileNav }, {'justify-between': !$store.getters.mobileNav}]">
-        <div style="width: 7rem;" v-if="!$store.getters.mobileNav">
+        <div style="width: 300px;" v-if="!$store.getters.mobileNav">
             <a href="/"><img src="/assets/img/lsu_precollege_white.png"/></a>
         </div>
-        <button class="hamburger hamburger--collapse fadeIn slow" :class="{ 'is-active': $store.getters.mobileNav }" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="true" @click="$store.dispatch('toggleMobileNav')">
+        <button class="hamburger hamburger--collapse fadeIn slow" :class="{ 'is-active': mobileNav }" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="true" @click="$store.dispatch('toggleMobileNav')">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
@@ -19,23 +19,12 @@
 
         <div class="hidden md:flex py-2 mt-2 justify-between items-end text-center">
             <a href="/request-info" class="btn btn--focused btn--gold mr-4">Request Info</a>
-            <a href="/apply-now" class="btn btn--focused btn--gold">Apply Now</a>
+            <a href="/apply" class="btn btn--focused btn--gold">Apply Now</a>
         </div>
     </div>
 
-    <!--Start of Nav-->
-    <div class="navContainer">
-        <nav class='headerNav max-w-2xl mx-auto'>
-            <div class="md:hidden flex items-center mb-2">
-                <img style="height:2.5rem" src="/assets/img/lsu_precollege_white.png"/>
-                <div class="ml-4">
-            
-                </div>
-             </div>
-    
+    <!--Start of Nav-->   
     {{ partial:nav }}
-
-    </div>
 
 {{ if url == "/" }}
     {{ partial:homepageForm }}
@@ -47,6 +36,7 @@
 {{ /if }}
 
     <div class="filter__greyFilter"></div>
-    <div class="filter__gradiantFilterX"></div>
-    
+    <div class="filter__gradientFilterX"></div>
+
 </header>
+</div>

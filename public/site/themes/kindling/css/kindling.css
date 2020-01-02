@@ -28,8 +28,9 @@ main {
 }
 
 a {
+    
     background-color: transparent;
-    -webkit-text-decoration-skip: objects
+    -webkit-text-decoration-skip: objects;
 }
 
 b,
@@ -338,7 +339,7 @@ h3 {
 
 .navContainer {
 	background-color: #461d7c;
-	z-index: 30;
+	z-index: 40;
 	position: relative;
 }
 
@@ -619,16 +620,15 @@ footer {
  }
 
 .btn.btn {
-    padding: .75rem 1rem;
-    border-radius: .65rem;
-    background-color: #55812b;
-    border-style: none;
+    font-weight: 500;
+    background-color: #fff;
+    border-style: solid;
     color: #461d7c;
     text-decoration: none
 }
 
 .btn.btn:hover {
-    background-color: #75ca35
+    background-color: #461D7C
 }
 
 .btn.btn--rounded-none {
@@ -1312,7 +1312,7 @@ dl dt {
     width: 100vw
 }
 
-.filter__gradiantFilterX {
+.filter__gradientFilterX {
     position: absolute;
     top: 0;
     left: 0;
@@ -1323,7 +1323,7 @@ dl dt {
     width: 100vw
 }
 
-.filter__gradiantFilterX {
+.filter__gradientFilterX {
     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .8)), color-stop(50%, transparent), to(rgba(0, 0, 0, .8)));
     background: linear-gradient(90deg, rgba(0, 0, 0, .8) 0, transparent 50%, rgba(0, 0, 0, .8));
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#cc000000", endColorstr="#cc000000", GradientType=1)
@@ -2673,6 +2673,7 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     width: 47.5%; } }
 
 .form-background {
+    position: relative;
 	z-index: 30;
 }
 
@@ -2690,6 +2691,7 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   .ff-submit-btn .ff-btn-submit {
     width: 100%; } 
   .form-background {
+    position: relative;
     background-color: rgba(0, 0, 0, 0);
     padding-left: 5rem;
 	}
@@ -2841,5 +2843,102 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     .navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
       padding: .5rem; } }
 
+.lead-purple {
+  text-align: center
+}
+.lead-purple-text {
+  color: #461d7c;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.lead-purple-text:hover{
+  color: #a39aac;
+  text-decoration: none
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIvY3NzL2FwcC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
+.home-center {
+  color: #461d7c;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: 400; }
+  .lead ul {
+    margin: 0;
+    padding: 0 0 0 0;
+    font-weight: 400; }
+  .lead li {
+    margin-left: 1.3rem;
+    margin-bottom: .4rem; }
+
+.grey-box {
+  background-color: rgba(203, 203, 203, 0.4);}
+
+.home-header {
+  text-align: left;
+  font-size: 2.3rem;
+  font-weight:600;
+}
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+  background-color: #000; }
+
+.overlay-image {
+  opacity: .3;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease; }
+
+.overlay-middle {
+  transition: .5s ease;
+  opacity: 1;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+.overlay-container:hover .overlay-image {
+  opacity: 0.8; }
+
+.overlay-container:hover .overlay-middle {
+  opacity: 1; }
+
+.overlay-text {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: roboto;
+  line-height: 22px;
+  color: #ffffff;
+  text-shadow: 1px 1px rgba(70, 70, 70, 0.8);
+  padding: 0 0 6px 0; }
+
+.overlay-text-2 {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: roboto;
+  line-height: 22px;
+  color: #cccccc;
+  text-shadow: 1px 1px rgba(70, 70, 70, 0.8);
+  padding: 3px 0 0 0;
+  border-top: 1px solid #cccccc; }
+
+.btn-outline-purple {
+  color: #461d7c;
+  border-color: rgba(70, 29, 124, 0.8);
+  border-width: 2px; }
+
+.btn-outline-purple:hover,
+.btn-outline-purple:focus,
+.btn-outline-purple:active {
+  color: #ffffff;
+  border-color: #461d7c;
+  background-color: #461d7c; }
