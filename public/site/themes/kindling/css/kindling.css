@@ -672,7 +672,7 @@ footer {
 .cards {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-left: -1rem
+    padding: 0 1rem;
 }
 
 .cards,
@@ -691,18 +691,18 @@ footer {
 }
 
 .cards .card__topic {
-    color: #d9b214;
+    color: #d29f13;
     font-size: .875rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 1rem
 }
 
 .cards .card__title {
     font-family: freight-sans-pro, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
     font-weight: 600;
-    color: #030;
+    color: #461d7c;
     line-height: 1
+    margin-bottom: 2rem;
 }
 
 .slider__content {
@@ -2940,3 +2940,33 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   color: #ffffff;
   border-color: #461d7c;
   background-color: #461d7c; }
+
+.btn-container {
+  text-align:center;
+}
+
+.eng-bullets {
+    margin-top:0
+    }
+
+@media only screen and (min-width:768px){
+.eng-bullets{
+    columns:2;
+    -webkit-columns:2;
+    -moz-columns:2 }
+}
+
+@media only screen and (min-width:992px){
+.eng-bullets{
+    columns:3;
+    -webkit-columns:3;
+    -moz-columns:3 }
+}
+
+.request-info-container {
+    position: relative;
+    text-align: center
+    width: 10rem;
+    display: flex;
+    align-items: center; 
+}
