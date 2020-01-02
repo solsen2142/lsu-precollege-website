@@ -338,13 +338,11 @@ h3 {
 }
 
 .navContainer {
-	background-color: #461d7c;
-	z-index: 40;
+	background-color: transparent;
 	position: relative;
 }
 
 .headerNav {
-    padding: rem;
     display: none;
     z-index: 30;
     position: relative
@@ -2693,7 +2691,7 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   .form-background {
     position: relative;
     background-color: rgba(0, 0, 0, 0);
-    padding-left: 5rem;
+    padding-left: 3rem;
 	}
   .form-container {
     position: relative;
