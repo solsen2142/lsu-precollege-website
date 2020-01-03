@@ -18,6 +18,8 @@
 
     <script type="text/javascript" src="/site/themes/kindling/js/vue.common.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/site/themes/kindling/js/vue.min.js"></script>
+    <script type="text/javascript" src="/site/themes/kindling/js/app.js"></script>
 
     {{ partial:cookie_consent }}
 
@@ -32,9 +34,14 @@
     {{ partial:footer }}
 
 <script>
+  const toggleCSSclasses = (el, ...cls) => cls.map(cl => el.classList.toggle(cl))
   var hamburger = document.querySelector(".hamburger");
   hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("is-active");
+  	var headerNav = document.querySelector(".headerNav");
+  	toggleCSSclasses(headerNav, "is-active", "bg-purple");
+  	var flex = document.querySelector(".flex");
+  	toggleCSSclasses(flex,"bg-purple");
   });
 </script>
 

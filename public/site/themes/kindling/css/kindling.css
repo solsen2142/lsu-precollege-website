@@ -343,8 +343,11 @@ h3 {
 }
 
 .headerNav {
+    border-top-width: 1px;
+    border-color: #A39AAC;
+    padding: 0 0.75rem;
     display: none;
-    z-index: 30;
+    z-index: 40;
     position: relative
 }
 
@@ -366,7 +369,7 @@ h3 {
     list-style: none;
     padding: 0;
     border-bottom-width: 1px;
-    border-color: #306353;
+    border-color: #A39AAC;
     font-size: .875rem
 }
 
@@ -384,7 +387,7 @@ h3 {
 
 .headerNav li {
     border-top-width: 1px;
-    border-color: #306353;
+    border-color: #A39AAC;
     padding-top: .25rem
 }
 
@@ -393,7 +396,7 @@ h3 {
 }
 
 .headerNav li.is-active a {
-    color: #fff
+    color: #A39AAC
 }
 
 .headerNav a,
@@ -403,7 +406,7 @@ h3 {
 
 .headerNav a {
     width: 100%;
-    color: #aecec4;
+    color: #fff;
     letter-spacing: .05em;
     font-weight: 700;
     text-decoration: none;
@@ -1754,6 +1757,10 @@ button.default:hover {
 
 .bg-green-dark {
     background-color: #030
+}
+
+.bg-purple {
+    background-color: #461d7c;
 }
 
 .bg-blue-superlight {
