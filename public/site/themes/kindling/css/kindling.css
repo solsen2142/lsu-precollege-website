@@ -343,12 +343,15 @@ h3 {
 }
 
 .headerNav {
-    border-top-width: 1px;
-    border-color: #A39AAC;
     padding: 0 0.75rem;
     display: none;
     z-index: 40;
     position: relative
+}
+
+.headerNavBorder {
+    border-top-width: 1px;
+    border-color: #A39AAC;
 }
 
 @media (min-width:768px) {

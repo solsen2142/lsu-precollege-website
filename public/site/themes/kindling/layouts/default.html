@@ -16,10 +16,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/site/themes/kindling/css/kindling.css">
 
-    <script type="text/javascript" src="/site/themes/kindling/js/vue.common.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/site/themes/kindling/js/vue.min.js"></script>
-    <script type="text/javascript" src="/site/themes/kindling/js/app.js"></script>
 
     {{ partial:cookie_consent }}
 
@@ -39,7 +36,7 @@
   hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("is-active");
   	var headerNav = document.querySelector(".headerNav");
-  	toggleCSSclasses(headerNav, "is-active", "bg-purple");
+  	toggleCSSclasses(headerNav, "is-active", "bg-purple", "headerNavBorder");
   	var flex = document.querySelector(".flex");
   	toggleCSSclasses(flex,"bg-purple");
   });
