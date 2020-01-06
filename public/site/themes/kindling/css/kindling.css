@@ -2976,7 +2976,6 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
 .request-info-container {
     position: relative;
     text-align: center
-    width: 10rem;
     display: flex;
     align-items: center; 
 }
