@@ -468,6 +468,10 @@ h3 {
         display: inline-block;
         position: relative
     }
+    .headerNav ul .active a {
+        text-decoration: underline;
+        color: #fff;
+    }
     .headerNav ul a:hover {
       text-decoration: none;
       color: #fff;
@@ -697,10 +701,11 @@ footer {
 }
 
 .cards .card__topic {
-    color: #d29f13;
-    font-size: .875rem;
-    font-weight: 400;
+    color: #95710F;
+    font-size: 1rem;
+    font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .cards .card__title {
@@ -708,7 +713,8 @@ footer {
     font-weight: 600;
     color: #461d7c;
     line-height: 1
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .slider__content {
@@ -1312,7 +1318,7 @@ dl dt {
     display: block;
     -webkit-filter: opacity(35%);
     filter: opacity(35%);
-    height: 100vh;
+    height: 100%;
     width: 100vw
 }
 
@@ -1323,7 +1329,7 @@ dl dt {
     z-index: 0;
     display: block;
     min-height: 700px;
-    height: 90vh;
+    height: 100%;
     width: 100vw
 }
 
@@ -2702,6 +2708,7 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     position: relative;
     background-color: rgba(0, 0, 0, 0);
     padding-left: 3rem;
+    padding-right: 3rem;
   }
   .form-container {
     position: relative;
@@ -2712,19 +2719,20 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     float: left;
     display: flex;
     align-items: center; 
-  color: #fff;
-    position: relative;
+    color: #fff;
     z-index: 20;
     max-height: 600px}
   .form-container-2 {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 300px;
     height: 600px;
     padding: 0 20px;
     float: right;
     display: flex;
-    align-items: center; } }
+    align-items: center;
+    z-index: 20;
+    max-height: 600px} }
 
 .container {
   padding-left: 30px;
@@ -2869,6 +2877,8 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
+  font-family: freight-sans-pro, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+  padding-bottom: 1rem;
 }
 
 .lead {
@@ -2889,6 +2899,8 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   text-align: left;
   font-size: 2.3rem;
   font-weight:600;
+  font-family: freight-sans-pro, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+  padding-bottom: 1rem;
 }
 
 .overlay-container {
@@ -2979,4 +2991,10 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     display: flex;
     width: 10rem;
     align-items: center; 
+}
+
+@media screen and (max-width:600px){
+.academyHeader{
+    visibility: hidden;
+    height: 0;}
 }
