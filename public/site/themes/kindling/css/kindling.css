@@ -300,7 +300,8 @@ h3 {
 
 @media (min-width:768px) {
     .siteHeader {
-        background-color: #f1eedb
+        background-color: #f1eedb;
+        background-repeat: no-repeat
     }
     .siteHeader .lsuLogo {
         width: 400px
@@ -1348,8 +1349,9 @@ dl dt {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 20;
+    z-index: 40;
     width: 100%;
+    max-width: 600px;
     padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2732,7 +2734,8 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     display: flex;
     align-items: center;
     z-index: 20;
-    max-height: 600px} }
+    max-height: 600px} 
+}
 
 .container {
   padding-left: 30px;
