@@ -2992,7 +2992,6 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     position: relative;
     text-align: center
     display: flex;
-    width: 10rem;
     align-items: center; 
 }
 
