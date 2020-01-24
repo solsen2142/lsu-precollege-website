@@ -2957,7 +2957,8 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
 .btn-outline-purple {
   color: #461d7c;
   border-color: rgba(70, 29, 124, 0.8);
-  border-width: 2px; }
+  border-width: 2px;
+  font-size:1.3rem; }
 
 .btn-outline-purple:hover,
 .btn-outline-purple:focus,
@@ -2968,6 +2969,8 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
 
 .btn-container {
   text-align:center;
+  position:relative;
+  float:left;
 }
 
 .eng-bullets {
