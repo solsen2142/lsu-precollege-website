@@ -327,8 +327,8 @@ h3 {
     color: #fff;
     position: relative;
     z-index: 20;
-    height: 65vh;
-    max-height: 600px
+    height: 90vh;
+    max-height: 800px
 }
 
 .siteHeader__errorpage {
@@ -3036,4 +3036,8 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
 .contact-us-box{
     padding-top:4rem;
 }
+}
+
+.card__text{
+    text-align:justify;
 }
