@@ -1,0 +1,38 @@
+<div id="lsu">
+    <header class="siteHeader filter"  style="background: #3c1053 url('/assets/img/headerBackgrounds{{ url }}/background.jpg'); background-position: 54% 44%; background-repeat: no-repeat;" >
+
+
+    <div class="flex p-4 items-center md:hidden relative z-50 justify-end">
+        <div class="logo1" style="width: 300px;">
+            <a href="/"><img src="/assets/img/lsu_precollege_white.png" alt="LSU logo"/></a>
+        </div>
+        <button class="hamburger hamburger--collapse fadeIn slow" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="true">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>       
+    </div>
+
+    <div class="max-w-2xl mx-auto hidden md:flex md:justify-between items-end mt-2 mb-4 px-4 relative filter__top">
+        <div class="lsuLogo">
+            <a href="/"><img style="height:2.5rem" src="/assets/img/lsu_precollege_white.png" alt="LSU logo"/></a>
+        </div>
+
+        <div class="hidden md:flex py-2 mt-2 justify-between items-end text-center">
+            <a href="/request-info" class="btn btn--focused btn--gold mr-4">Request Info</a>
+            <a href="/apply" class="btn btn--focused btn--gold">Apply Now</a>
+        </div>
+    </div>
+
+    <!--Start of Nav-->   
+    {{ partial:nav }}
+
+    <section class="siteHeader__errorpage px-4 max-w-2xl mx-auto">
+      <h1 class="text-3xl sm:text-5xl md:text-6xl text-shadow">404: Page Not Found</h1>
+    </section>
+
+    <div class="filter__greyFilter"></div>
+    <div class="filter__gradientFilterX"></div>
+
+</header>
+</div>
