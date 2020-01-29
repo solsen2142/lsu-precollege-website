@@ -3,7 +3,9 @@
 <html lang="en">
 <head>
 
-	{{ partial:gtag }}
+	  {{ partial:gtag }}
+
+    {{ partial:fbpixel }}
 
     <link rel="preconnect" href="//use.typekit.net">
     <meta charset="utf-8">
@@ -21,19 +23,11 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    {{ partial:gtag }}
-
-    {{ partial:fbpixel }}
-
     {{ partial:cookie_consent }}
 
 </head>
 
 <body>
-
-	<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWHTCQH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
 
     {{ partial:header }}
 
