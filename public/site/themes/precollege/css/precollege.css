@@ -3031,3 +3031,9 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     visibility: hidden;
     height: 0;}
 }
+
+@media screen and (min-width:600px){
+.contact-us-box{
+    padding-top:4rem;
+}
+}
