@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-	  {{ partial:gtag }}
+	{{ partial:gtag }}
 
     {{ partial:fbpixel }}
 
@@ -21,47 +21,60 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/site/themes/precollege/css/precollege.css">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-    {{ partial:cookie_consent }}
-
 </head>
 
 <body>
 
-    {{ partial:header }}
+	{{ if url == "/summer" }}
+    	{{ partial:headerlanding }}
+
+    {{ elseif response_code == 404 }}
+    	{{ partial:headererror }}
+
+    {{ else }}
+    	{{ partial:header }}
+
+    {{ /if }}
+
 
     {{ template_content }}
 
     {{ partial:footer }}
 
-<script>
-  const toggleCSSclasses = (el, ...cls) => cls.map(cl => el.classList.toggle(cl))
-  var hamburger = document.querySelector(".hamburger");
-  hamburger.addEventListener("click", function() {
-    hamburger.classList.toggle("is-active");
-  	var headerNav = document.querySelector(".headerNav");
-  	toggleCSSclasses(headerNav, "is-active", "bg-purple", "headerNavBorder");
-  	var flex = document.querySelector(".flex");
-  	toggleCSSclasses(flex,"bg-purple");
-  });
-</script>
 
-<script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('active'); $(this).parents('li').addClass('active');
-            }
-        });
-    });
-</script>
+    {{ if url != "/summer" }}
+		<script>
+		  const toggleCSSclasses = (el, ...cls) => cls.map(cl => el.classList.toggle(cl))
+		  var hamburger = document.querySelector(".hamburger");
+		  hamburger.addEventListener("click", function() {
+		    hamburger.classList.toggle("is-active");
+		  	var headerNav = document.querySelector(".headerNav");
+		  	toggleCSSclasses(headerNav, "is-active", "bg-purple", "headerNavBorder");
+		  	var flex = document.querySelector(".flex");
+		  	toggleCSSclasses(flex,"bg-purple");
+		  });
+		</script>
+	{{ /if }}
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+	    $(function(){
+	        $('a').each(function(){
+	            if ($(this).prop('href') == window.location.href) {
+	                $(this).addClass('active'); $(this).parents('li').addClass('active');
+	            }
+	        });
+	    });
+	</script>
 
-<!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6360090.js"></script>
-<!-- End of HubSpot Embed Code -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    {{ partial:cookie_consent }}
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- Start of HubSpot Embed Code -->
+	  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6360090.js"></script>
+	<!-- End of HubSpot Embed Code -->
 
 </body>
 </html>

@@ -31,12 +31,9 @@
     {{ partial:homepageForm }}
 
 {{ elseif url == "/academy" }}
-    {{ partial:academyForm }}
-    <div class="academyHeader">
-        <section class="siteHeader__image-content px-4 max-w-2xl mx-auto" style="text-align: center">
-          <h1 class="text-3xl sm:text-5xl md:text-6xl text-shadow">{{ title }}</h1>
-        </section>
-    </div>
+    <section class="siteHeader__image-content px-4 max-w-2xl mx-auto" style='padding-bottom:1rem'>
+      <h1 class="text-6xl sm:text-6xl md:text-6xl text-shadow text-center" style="font-weight:600"><span class="fierce">FIERCE</span> for the Summer</h1>
+    </section>
 
 {{ else }}
     <section class="siteHeader__image-content px-4 max-w-2xl mx-auto">
