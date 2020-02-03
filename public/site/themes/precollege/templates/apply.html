@@ -20,3 +20,11 @@
 </div>
 
 <script src="https://js.stripe.com/v3/"></script>
+
+<script>
+	window.addEventListener('message', event => {
+	   if(event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
+	       callStripe('sku_GfI8c62sCyScYY')
+	   }
+	});
+</script>
