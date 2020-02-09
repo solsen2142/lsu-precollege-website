@@ -1340,7 +1340,7 @@ dl dt {
     left: 0;
     z-index: 0;
     display: block;
-    min-height: 700px;
+    min-height: 800px;
     height: 100%;
     width: 100vw
 }
@@ -2724,14 +2724,14 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     width: 300px;
-    height: 600px;
+    height: 700px;
     padding: 0 20px;
     float: left;
     display: flex;
     align-items: center; 
     color: #fff;
     z-index: 20;
-    max-height: 600px}
+    max-height: 700px}
   .form-container-2 {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
