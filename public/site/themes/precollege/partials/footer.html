@@ -16,19 +16,32 @@
         </p>
         </div>
         <div class="footer-column-2">
-          <a href="https://www.facebook.com/lsuprecollegeprogram/" target="_blank"><img src="/assets/img/icons/icon-fb.png" alt="Follow us on Facebook" class="social-icon social-icon-pad"></a>
-          <a href="https://www.instagram.com/precollegelsu/" target="_blank"><img src="/assets/img/icons/icon-ig.png" alt="Follow us on Instagram" class="social-icon social-icon-pad"></a>
-          <div class="hashtag">
-            <em>#LSUPreCollege</em>
-          </div>
+          {{ if url == "/summer" }}
+            <div class="hashtag">
+              <em>#LSUPreCollege</em>
+            </div>
+          {{ else }}
+            <a href="https://www.facebook.com/lsuprecollegeprogram/" target="_blank"><img src="/assets/img/icons/icon-fb.png" alt="Follow us on Facebook" class="social-icon social-icon-pad"></a>
+            <a href="https://www.instagram.com/precollegelsu/" target="_blank"><img src="/assets/img/icons/icon-ig.png" alt="Follow us on Instagram" class="social-icon social-icon-pad"></a>
+            <div class="hashtag">
+              <em>#LSUPreCollege</em>
+            </div>
+          {{ /if }}
         </div>
         <div class="footer-column-3">
-          <p><b>LSU College Readiness Programs</b><br>
-            Gordon A. Cain Center for STEM Literacy<br>
-            222 Prescott Hall<br>
-            Baton Rouge, LA 70803<br>
-            Phone: 225-578-4606<br>
-            <a href="mailto:precollege@lsu.edu" target="_blank">precollege@lsu.edu</a></p>
+          {{ if url == "/summer" }}
+            <p><b>LSU College Readiness Programs</b><br>
+              Gordon A. Cain Center for STEM Literacy<br>
+              222 Prescott Hall<br>
+              Baton Rouge, LA 70803<br></p>
+          {{ else }}
+            <p><b>LSU College Readiness Programs</b><br>
+              Gordon A. Cain Center for STEM Literacy<br>
+              222 Prescott Hall<br>
+              Baton Rouge, LA 70803<br>
+              Phone: 225-578-4606<br>
+              <a href="mailto:precollege@lsu.edu" target="_blank">precollege@lsu.edu</a></p>
+          {{ /if }}
         </div>
       </div>
     </div>
