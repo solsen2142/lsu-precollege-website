@@ -21,3 +21,7 @@ routes:
     layout: feed
     template: feeds/things
     content_type: atom
+  /scholarships:
+    redirect: /academy/scholarships
+  /tuition:
+    redirect: /academy/tuition
