@@ -3042,6 +3042,28 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     max-width:800px
 }
 
+.homepageTitle{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+    z-index: 20;
+    padding-top: 55vh;
+    max-height: 600px;
+    max-width:800px
+}
+
+@media screen and (max-width:1000px){
+.homepageTitle{
+    padding-top:0;
+    float:left;}
+}
+
 @media screen and (max-width:600px){
 .academyHeader{
     visibility: hidden;
