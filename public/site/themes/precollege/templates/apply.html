@@ -25,7 +25,6 @@
 			var formData = $form.serialize();
 			var scholarshipFieldName = "would_you_like_to_be_considered_for_a_needs_based_scholarship_";
 			var scholarshipPosition = formData.search(scholarshipFieldName);
-			console.log(formData[scholarshipPosition + scholarshipFieldName.length+1]+" "+formData);
 
 			if(formData[scholarshipPosition + scholarshipFieldName.length+1] === 'N'){
 				callStripe('sku_GfI8c62sCyScYY');
