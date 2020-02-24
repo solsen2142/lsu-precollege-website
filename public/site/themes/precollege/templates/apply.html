@@ -21,7 +21,7 @@
 	  hbspt.forms.create({
 		portalId: "6360090",
 		formId: "151b2d56-6981-4794-adbb-6d937c682500",
-		onFormSubmit: function($form){
+		onFormSubmitted: function($form){
 			var formData = $form.serialize();
 			var scholarshipFieldName = "would_you_like_to_be_considered_for_a_needs_based_scholarship_";
 			var scholarshipPosition = formData.search(scholarshipFieldName);
