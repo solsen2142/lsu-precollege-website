@@ -6,8 +6,8 @@
 	        <p class="lead">This is the student application for the 2020 LSU Pre-College Summer Academy. Please fill out the application to the best of your knowledge and be sure to have the permission of your parent/guardian before submitting.</p>
 	        <p class="lead"><b>Early Bird Deadline:</b> March 6th, 2020</p>
 	        <p class="lead"><b>Regular Application Deadline:</b> April 30th, 2020</p>
-	        <p class="lead"><b>Application Fee:</b> $100, applied towards your tuition balance if accepted. This fee is nonrefundable and is due on submission of application. Scholarship and financial aid applicants are not required to pay the application fee.</p>
-	        <p class="lead"><b>Tuition Deposit:</b> $1000, due one week after acceptance. This is required to receive the Early Bird discount. The application fee is counted towards your tuition deposit balance.</p>
+	        <!--<p class="lead"><b>Application Fee:</b> $100, applied towards your tuition balance if accepted. This fee is nonrefundable and is due on submission of application. Scholarship and financial aid applicants are not required to pay the application fee.</p>-->
+	        <p class="lead"><b>Tuition Deposit:</b> $1000, due one week after acceptance. This is required to receive the Early Bird discount.</p>
 	        <p class="lead"><b>Payment Deadline:</b> Full tuition payment must be made by May 15th, 2020.</p>
 			<p class="lead"><b>Scholarships & Finanicial Aid:</b> A limited number of scholarships and financial aid awards are available.</p>
 	      </div>
@@ -21,7 +21,7 @@
 	  hbspt.forms.create({
 		portalId: "6360090",
 		formId: "151b2d56-6981-4794-adbb-6d937c682500",
-		onFormSubmitted: function($form){
+		/*onFormSubmitted: function($form){
 			var formData = $form.serialize();
 			var scholarshipFieldName = "would_you_like_to_be_considered_for_a_needs_based_scholarship_";
 			var scholarshipPosition = formData.search(scholarshipFieldName);
@@ -32,7 +32,7 @@
 			else{
 				callStripe('sku_GfI8c62sCyScYY');
 			}
-		}
+		}*/
 	  });
 	</script>
 </div>
