@@ -202,7 +202,7 @@ ul {
 *,
 :after,
 :before {
-    border: 0 solid #ccc
+    border: 0 solid #000
 }
 
 img {
@@ -1821,8 +1821,10 @@ button.default:hover {
     border-color: #ccc
 }
 
-.border-green-darkish {
-    border-color: #305026
+.border-black {
+    border-color: #000 !important;
+    border-width: 2px !important;
+    background-color: #f9f9f9;
 }
 
 .border-red {
@@ -1842,7 +1844,7 @@ button.default:hover {
 }
 
 .border {
-    border-width: 1px
+    border-width: 2px
 }
 
 .border-t-2 {
