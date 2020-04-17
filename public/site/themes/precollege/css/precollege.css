@@ -1824,6 +1824,9 @@ button.default:hover {
 .border-black {
     border-color: #000 !important;
     border-width: 2px !important;
+}
+
+.light-background {
     background-color: #f9f9f9;
 }
 
