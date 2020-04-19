@@ -2977,14 +2977,23 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   color: #461d7c;
   border-color: rgba(70, 29, 124, 0.8);
   border-width: 2px;
-  font-size:1.3rem; }
+}
 
 .btn-outline-purple:hover,
 .btn-outline-purple:focus,
 .btn-outline-purple:active {
   color: #ffffff;
   border-color: #461d7c;
-  background-color: #461d7c; }
+  background-color: #461d7c;
+}
+
+.btn-text-large {
+  font-size: 1.3rem;
+}
+
+.btn-text-small {
+  font-size: 1rem;
+}
 
 .btn-container {
   text-align:center;
@@ -3024,6 +3033,11 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
 
 .card__text{
     text-align:justify;
+}
+
+.card__body{
+    text-align: justify;
+    padding-top: 1rem;
 }
 
 .fierce{
@@ -3100,5 +3114,15 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
 @media (min-width:992px) and (max-width:1260px){
   .summerLandingTitle{
     padding-top:35vh;
+  }
+}
+
+@media (max-width: 992px){
+  .card__title {
+    padding-bottom: 0 !important;
+  }
+
+  .academy-image {
+    display: none;
   }
 }
