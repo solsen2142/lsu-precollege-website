@@ -2987,6 +2987,10 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   background-color: #461d7c;
 }
 
+.btn-text-extra-large {
+  font-size: 2rem;
+}
+
 .btn-text-large {
   font-size: 1.3rem;
 }
