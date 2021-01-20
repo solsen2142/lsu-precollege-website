@@ -1,0 +1,148 @@
+<template>
+
+    <div class="blueprint-section-field" :class="widthClass">
+        <div class="blueprint-section-field-inner">
+            <div class="blueprint-drag-handle w-4 border-r"></div>
+            <div class="flex flex-1 items-center justify-between">
+                <div class="flex items-center flex-1 pr-2 py-1 pl-1">
+                    <svg-icon class="text-grey-70 mr-1 flex-none" :name="field.icon" v-tooltip="tooltipText" />
+                    <a class="break-all" v-text="labelText" @click="$emit('edit')" />
+                    <svg-icon name="hyperlink" v-if="isReferenceField" class="text-grey-60 text-3xs ml-1" v-tooltip="__('Imported from fieldset') + ': ' + field.field_reference" />
+                </div>
+                <div class="flex-none pr-1 flex">
+                    <width-selector v-model="width" class="mr-1" />
+                    <button v-if="canDefineLocalizable"
+                        class="hover:text-grey-100 mr-1"
+                        :class="{ 'text-grey-100': localizable, 'text-grey-60': !localizable }"
+                        v-tooltip="__('Localizable')"
+                        @click="localizable = !localizable"
+                    >
+                        <svg-icon name="earth" />
+                    </button>
+                    <button @click.prevent="$emit('deleted')" class="text-grey-60 hover:text-grey-100"><svg-icon name="trash" /></button>
+                    <stack name="field-settings" v-if="isEditing" @closed="editorClosed">
+                        <field-settings
+                            ref="settings"
+                            :type="field.fieldtype"
+                            :root="isRoot"
+                            :config="fieldConfig"
+                            :overrides="field.config_overrides || []"
+                            :suggestable-condition-fields="suggestableConditionFields"
+                            @committed="settingsUpdated"
+                            @closed="editorClosed"
+                        />
+                    </stack>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>
+
+<script>
+import Field from './Field.vue';
+import FieldSettings from '../fields/Settings.vue';
+import WidthSelector from '../fields/WidthSelector.vue';
+import CanDefineLocalizable from '../fields/CanDefineLocalizable';
+
+export default {
+
+    mixins: [Field, CanDefineLocalizable],
+
+    components: {
+        FieldSettings,
+        WidthSelector,
+    },
+
+    props: [
+        'suggestableConditionFields'
+    ],
+
+     data() {
+        return {
+            showHandle: false,
+        }
+    },
+
+    computed: {
+
+        tooltipText() {
+            return this.field.fieldtype;
+        },
+
+        isReferenceField() {
+            return this.field.hasOwnProperty('field_reference');
+        },
+
+        isInlineField() {
+            return !this.isReferenceField;
+        },
+
+        fieldConfig() {
+            return Object.assign({}, this.field.config, {
+                handle: this.field.handle
+            });
+        },
+
+        labelText() {
+            return this.field.config.display
+                || Vue.options.filters.titleize(Vue.options.filters.deslugify(this.field.handle));
+        },
+
+        width: {
+            get() {
+                return this.field.config.width;
+            },
+            set(width) {
+                let field = this.field;
+                field.config.width = width;
+                if (field.type === 'reference') field.config_overrides.push('width');
+                this.$emit('updated', field);
+            }
+        },
+
+        widthClass() {
+            if (! this.isSectionExpanded) return 'blueprint-section-field-w-full';
+
+            return `blueprint-section-field-${tailwind_width_class(this.width)}`;
+        },
+
+        localizable: {
+            get() {
+                return this.field.config.localizable || false;
+            },
+            set(localizable) {
+                let field = this.field;
+                field.config.localizable = localizable;
+                if (field.type === 'reference') field.config_overrides.push('localizable');
+                this.$emit('updated', field);
+            }
+        },
+    },
+
+    methods: {
+
+        settingsUpdated(settings, editedFields) {
+            let field = this.field;
+
+            // Handle is stored separately from the config.
+            field.handle = settings.handle;
+            delete settings.handle;
+
+            field.config = settings;
+
+            if (field.type === 'reference') {
+                field.config_overrides = editedFields;
+            }
+
+            this.$emit('updated', field);
+        },
+
+        editorClosed() {
+            this.$emit('editor-closed');
+        }
+
+    }
+
+}
+</script>

@@ -1,0 +1,16 @@
+/* ==========================================================================
+   REVEALER FIELDTYPE
+   ========================================================================== */
+
+.revealer-fieldtype {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+
+    label, .help-block {
+        display: none !important;
+    }
+
+    .btn {
+        margin-bottom: 32px;
+    }
+}

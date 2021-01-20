@@ -1,0 +1,11 @@
+fields:
+  -
+    handle: posts
+    field:
+      type: integer
+      display: 'Number of Posts'
+      width: 25
+  -
+    handle: content
+    field:
+      type: markdown
