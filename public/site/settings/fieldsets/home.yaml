@@ -1,8 +1,0 @@
-hide: true
-fields:
-  posts:
-    type: integer
-    display: Number of Posts
-    width: 25
-  content:
-    type: markdown
