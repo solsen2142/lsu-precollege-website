@@ -1,4 +1,0 @@
-admin:
-  title: Admin
-  permissions:
-    - super
