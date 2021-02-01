@@ -1,0 +1,76 @@
+title: Courses
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: grade_level
+        field:
+          type: terms
+          taxonomies:
+            - grade_level
+          display: 'Grade Level'
+          mode: select
+      -
+        handle: course_type
+        field:
+          type: terms
+          taxonomies:
+            - course_type
+          display: 'Course Type'
+          mode: select
+      -
+        handle: dates
+        field:
+          type: terms
+          taxonomies:
+            - dates
+          display: Dates
+          mode: select
+      -
+        handle: subject_area
+        field:
+          type: terms
+          taxonomies:
+            - subject_area
+          display: 'Subject Area'
+          mode: select
+      -
+        handle: time
+        field:
+          type: terms
+          taxonomies:
+            - time
+          display: Time
+          mode: select
+      -
+        handle: tuition
+        field:
+          type: terms
+          taxonomies:
+            - tuition
+          display: Tuition
+          mode: select

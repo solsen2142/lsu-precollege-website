@@ -1,5 +1,9 @@
 title: Pages
+template: default
+layout: layout
+revisions: false
 route: '{{ parent_uri }}/{{ slug }}'
+sort_dir: asc
 structure:
   root: true
   tree:
@@ -36,11 +40,6 @@ structure:
     -
       entry: b644f72d-7e1d-423f-b141-03708f5a1fe0
     -
-      entry: 020d0b4e-f0c9-4f20-bbb6-b7675cffcde4
-      children:
-        -
-          entry: e3b320e2-6e17-4b00-a2bc-3c32896f5733
-    -
       entry: f202b7cd-4a88-4444-a534-4f463ea55174
     -
       entry: 6a6d900b-7120-49df-aeb4-c7a5224cdda7
@@ -50,3 +49,8 @@ structure:
       entry: b51217b5-7779-4b8e-9136-0bc25bdda801
     -
       entry: 931bd7a1-f9f3-463e-89c3-04fd740a7eea
+    -
+      entry: 020d0b4e-f0c9-4f20-bbb6-b7675cffcde4
+      children:
+        -
+          entry: e3b320e2-6e17-4b00-a2bc-3c32896f5733

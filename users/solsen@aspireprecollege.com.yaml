@@ -1,7 +1,7 @@
 roles:
   - admin
-id: 70be348e-36d9-4d70-82ce-0b173a724d68
 super: true
-password_hash: $2y$10$WsuwBHZ5AiJCmXtM0ahvUeJvpkOE0ecpJloAWc7UwGkmO6nq4rr4K
 content: hello
 name: 'Steven Olsen'
+id: 70be348e-36d9-4d70-82ce-0b173a724d68
+password_hash: $2y$10$WsuwBHZ5AiJCmXtM0ahvUeJvpkOE0ecpJloAWc7UwGkmO6nq4rr4K

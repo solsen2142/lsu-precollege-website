@@ -35,9 +35,3 @@ Route::statamic('things/feed', 'feeds.things', [
     'layout' => 'feed',
     'content_type' => 'atom',
 ]);
-Route::statamic('scholarships', '', [
-    'redirect' => '/academy/scholarships',
-]);
-Route::statamic('tuition', '', [
-    'redirect' => '/academy/tuition',
-]);

@@ -18,7 +18,7 @@ return [
         'default' => [
             'name' => 'English',
             'locale' => 'en_US',
-            'url' => 'https://precollege.lsu.edu/',
+            'url' => '/',
         ],
 
     ],

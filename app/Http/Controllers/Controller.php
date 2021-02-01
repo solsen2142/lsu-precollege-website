@@ -11,3 +11,15 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
+
+class RedirectController extends Controller
+{
+    public function index()
+    {
+        $data = [
+            'title' => 'Example Title'
+        ];
+
+        return view('myview', $data);  // resources/views/myview.blade.php
+    }
+}
