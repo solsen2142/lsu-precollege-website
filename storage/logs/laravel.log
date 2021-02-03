@@ -10745,3 +10745,35 @@ Using cache file ".php_cs.cache".
 #46 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #47 {main}
 "} 
+[2021-02-03 22:02:18] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:02:18] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:02:18] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:02:18] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:02:18] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:02:37] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:02:37] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:02:37] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:02:37] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:02:37] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:11] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:22] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:22] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:22] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:22] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:22] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:30] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:30] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:30] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:30] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
+[2021-02-03 22:04:30] local.DEBUG: Cannot loop over non-loopable variable: {{ slug }}  
