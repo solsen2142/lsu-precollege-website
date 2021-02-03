@@ -1,0 +1,20 @@
+
+
+<?php $__env->startSection('title'); ?>
+    <h1><?php echo e(t('page_not_found')); ?></h1>
+    <hr>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+
+    <p><?php echo e(t('page_not_found_instructions')); ?></p>
+
+    <br>
+
+    <div>
+        <a class="btn btn-primary btn-block" href="<?php echo e(route('cp')); ?>"><?php echo e(t('dashboard')); ?></a>
+    </div>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('outside', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

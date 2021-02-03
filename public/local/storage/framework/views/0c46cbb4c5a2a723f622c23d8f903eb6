@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<meta id="csrf-token" value="<?php echo e(csrf_token()); ?>" />
+<meta name="robots" content="noindex,nofollow">
+<title><?php echo e(isset($title) ? $title : ''); ?> | Statamic</title>
+<link href="<?php echo e(cp_resource_url('css/cp.css')); ?>?v=<?php echo e(STATAMIC_VERSION); ?>" rel="stylesheet" />
+<?php if(\Statamic\API\File::exists('site/helpers/cp/override.css')): ?>
+    <link href="<?php echo e(resource_url('helpers/cp/override.css')); ?>" rel="stylesheet" />
+<?php endif; ?>
+<link rel="icon" type="image/png" href="<?php echo e(cp_resource_url('img/favicon@2x.png')); ?>" sizes="32x32" />
+<link rel="icon" type="image/png" href="<?php echo e(cp_resource_url('img/favicon.png')); ?>" sizes="16x16" />
+<script>
+    var Statamic = {
+        'siteRoot': '<?php echo SITE_ROOT; ?>',
+        'cpRoot': '<?php echo $cp_root; ?>',
+        'urlPath': '/<?php echo e(request()->path()); ?>',
+        'resourceUrl': '<?php echo cp_resource_url('/'); ?>',
+        'locales': <?php echo json_encode(Statamic\API\Config::get('system.locales')); ?>,
+        'markdownHardWrap': <?php echo e(bool_str(Statamic\API\Config::get('theming.markdown_hard_wrap'))); ?>,
+        'bard': {
+            'plugins': [],
+            'buttons': []
+        },
+        'conditions': {},
+        'flash': [],
+        'userId': '<?php echo e(\Statamic\API\User::loggedIn() ? \Statamic\API\User::getCurrent()->id() : null); ?>',
+        'dateFormat': '<?php echo e(to_moment_js_date_format(\Statamic\API\Config::get('cp.date_format'))); ?>'
+    };
+</script>
+
+<?php echo $layout_head; ?>
+

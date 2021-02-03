@@ -1,0 +1,8 @@
+<script src="<?php echo e(cp_resource_url('js/manifest.js')); ?>?v=<?php echo e(STATAMIC_VERSION); ?>"></script>
+<script src="<?php echo e(cp_resource_url('js/vendor.js')); ?>?v=<?php echo e(STATAMIC_VERSION); ?>"></script>
+<script src="<?php echo e(cp_resource_url('js/bootstrap.js')); ?>?v=<?php echo e(STATAMIC_VERSION); ?>"></script>
+<?php echo $scripts; ?>
+
+<?php echo $fieldtype_js; ?>
+
+<script src="<?php echo e(cp_resource_url('js/app.js')); ?>?v=<?php echo e(STATAMIC_VERSION); ?>"></script>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <?php echo $__env->make('partials.head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    </head>
+
+    <body id="statamic" class="outside">
+
+        <div class="container">
+            <div class="row">
+                <div class="logo"><?php echo inline_svg('statamic-mark'); ?></div>
+                <div class="box card col-centered" <?php echo $__env->yieldContent('box-attributes'); ?>>
+                    <div id="wrapper">
+
+                        <?php echo $__env->yieldContent('title'); ?>
+
+                        <?php echo $__env->make('partials.flash', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+                        <?php echo $__env->yieldContent('content'); ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </div>
+        <script>Statamic.translations = <?php echo $translations; ?>;</script>
+        <?php echo $__env->make('partials.scripts', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php echo $__env->yieldContent('scripts'); ?>
+    </body>
+</html>

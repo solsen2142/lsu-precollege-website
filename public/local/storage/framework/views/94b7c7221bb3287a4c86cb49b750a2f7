@@ -1,0 +1,13 @@
+<?php if(session()->has('success')): ?>
+    <div class="alert alert-success">
+        <p><?php echo e(session()->get('success')); ?></p>
+    </div>
+<?php endif; ?>
+
+<?php if(count($errors) > 0): ?>
+    <div class="alert alert-danger">
+        <?php foreach($errors->all() as $error): ?>
+            <p><?php echo e($error); ?></p>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
