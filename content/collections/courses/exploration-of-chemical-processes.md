@@ -3,7 +3,7 @@ title: 'Exploration of Chemical Processes'
 grade_level:
   - high-school
 course_type:
-  - on-campus
+  - on-campus-academy
 dates:
   - july-6th-july-16th
 subject_area:
@@ -13,7 +13,7 @@ time:
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612142343
+updated_at: 1612372385
 id: 508deed9-357e-481a-8eff-5d01cc99d0c9
 ---
 <b>To Prepare For:</b> High School Chemistry<br><br>

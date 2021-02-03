@@ -3,7 +3,7 @@ title: 'Physics Fundamentals'
 grade_level:
   - high-school
 course_type:
-  - on-campus
+  - on-campus-academy
 dates:
   - july-19th-july-30th
 subject_area:
@@ -13,7 +13,7 @@ time:
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612142765
+updated_at: 1612374122
 id: 9906e5a3-4811-458b-829c-28898966d24f
 ---
 <b>To Prepare For:</b> AP Physics 1, High School Physics<br><br>

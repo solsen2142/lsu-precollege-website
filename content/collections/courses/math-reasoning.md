@@ -3,7 +3,7 @@ title: 'Mathematical Reasoning'
 grade_level:
   - high-school
 course_type:
-  - on-campus
+  - on-campus-academy
 dates:
   - july-19th-july-30th
 subject_area:
@@ -13,7 +13,7 @@ time:
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612142734
+updated_at: 1612374114
 id: 358c376a-6275-4d42-ad5c-ec0a25e05a4a
 ---
 <b>To Prepare For:</b> Algebra 1, Geometry, Algebra 2, Precalculus<br><br>

@@ -1,7 +1,7 @@
 ---
 title: 'Math Circle: Conducting Mathematical Research'
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612128977
+updated_at: 1612374105
 grade_level:
   - high-school
 dates:
@@ -9,9 +9,9 @@ dates:
 subject_area:
   - mathematics
 course_type:
-  - virtual
+  - virtual-academy
 time:
-  - morning-10am-12pm
+  - tbd
 tuition:
   - usd895
 id: e7fba765-9417-419a-aae4-2939210b9b7d

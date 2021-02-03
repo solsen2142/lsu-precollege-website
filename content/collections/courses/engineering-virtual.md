@@ -3,17 +3,17 @@ title: 'Intro to Engineering (Virtual)'
 grade_level:
   - high-school
 course_type:
-  - virtual
+  - virtual-academy
 dates:
   - june-28th-july-16th
 subject_area:
   - engineering
 time:
-  - morning-10am-12pm
+  - tbd
 tuition:
   - usd895
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612142686
+updated_at: 1612374095
 id: 33f5d949-929b-41de-8420-e6d1d63570ad
 ---
 <b>For Careers in:</b> All Engineering Disciplines<br><br>

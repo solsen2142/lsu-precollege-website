@@ -3,17 +3,17 @@ title: 'Computational Biology'
 grade_level:
   - high-school
 course_type:
-  - virtual
+  - virtual-academy
 dates:
   - june-28th-july-16th
 subject_area:
   - biology
 time:
-  - afternoon-1pm-3pm
+  - tbd
 tuition:
   - usd895
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612129264
+updated_at: 1612372280
 id: 511b7b45-178b-4d6b-8cda-7b81e2f1a62d
 ---
 <b>For Careers in:</b> Medicine, Biology, Computer Science<br><br>
