@@ -13,7 +13,9 @@ time:
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612374122
+updated_at: 1612468562
+sponsor:
+  - lsu-college-of-science
 id: 9906e5a3-4811-458b-829c-28898966d24f
 ---
 <b>To Prepare For:</b> AP Physics 1, High School Physics<br><br>

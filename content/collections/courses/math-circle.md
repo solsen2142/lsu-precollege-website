@@ -1,7 +1,7 @@
 ---
 title: 'Math Circle: Conducting Mathematical Research'
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612374105
+updated_at: 1612468545
 grade_level:
   - high-school
 dates:
@@ -14,6 +14,8 @@ time:
   - tbd
 tuition:
   - usd895
+sponsor:
+  - lsu-college-of-science
 id: e7fba765-9417-419a-aae4-2939210b9b7d
 ---
 <b>For Careers in:</b> Mathematics, Statistics, Finance<br><br>

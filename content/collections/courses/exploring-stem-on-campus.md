@@ -18,7 +18,9 @@ time:
 tuition:
   - tbd
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612374035
+updated_at: 1612468614
+sponsor:
+  - lsu-college-of-engineering
 id: 18eae45c-3c7d-4186-a109-9f93050c6324
 ---
 Join us for a week of STEM-based fun as we introduce you to a variety of cutting-edge STEM fields. Through field trips and hands-on activities, you will have the opportunity to work in teams to design, build, and present projects in a number of STEM disciplines.

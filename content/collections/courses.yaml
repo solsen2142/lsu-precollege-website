@@ -8,6 +8,7 @@ taxonomies:
   - course_type
   - time
   - tuition
+  - sponsor
 revisions: false
 sort_dir: asc
 date_behavior:
