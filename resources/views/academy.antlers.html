@@ -9,7 +9,19 @@
 </section>
 
 <section class="grey-box">
-<div class="container">
+  <div class="container">
+      <div class="row pb-4 pt-4">
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <q>My experience at LSU Pre-College provided me with new knowledge and skills that I can apply in the future. I felt that I was in a class of like-minded peers aiming to achieve the same goal.</q>
+              <p class="author">- <b>Student</b>, Summer Academy</p>
+            </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+<div class="container" id="academy">
   <div class="row pt-4 pb-4">
       <div class="col-lg-8">
         <h2 class="home-header" style="padding-bottom:0; font-weight:700">On-Campus Academy</h2>
@@ -77,4 +89,73 @@
   </section>
 </div>
 </div>
+
+<section class="grey-box">
+  <div class="container" id="experiences">
+  <div class="row pt-4 pb-4">
+      <div class="col-lg-8">
+        <h2 class="home-header" style="padding-bottom:0; font-weight:700">On-Campus Experiences</h2>
+        <h3 class="home-subheader">June - July | Middle and High School | 2-6 hours per day</h3>
+        <h3 class="home-subheader"><b>Registration Opens Feburary 15th!</b></h3>
+        <p class="lead">Sponsored by Departments across LSU's campus, our Educational Experiences are designed to provide fun, educational programs on campus for middle and high schoolers during the summer.</p>
+      </div>
+
+      <div class="col-lg-4 my-auto academy-image">
+        <img src="/assets/img/home/engineering.jpg" alt="Student preparing for college">
+      </div>
+    </div>
+
+
+    <section class="cards">
+    {{ collection:courses taxonomy:course_type="on-campus-experience" }}
+
+      <section id="{{slug}}" class="mt-4 mb-4 w-full pl-1 pr-1">
+      <article class="h-full border border-black light-background">
+        <div class="card__inner">
+          <div class="container" style="padding:0">
+            <div class="row">
+              <div class="col-lg-12">
+                  <div class="col-lg-8 btn-container" style="text-align:left;padding-left:0">
+                  <p class="card__topic">{{course_type}}{{title}}{{/course_type}} | {{sponsor}}{{title}}{{/sponsor}}</p>
+                  <h3 class="card__title">{{ title }}</h3>
+              </div>
+              <div class="col-lg-4 btn-container">
+            <a class="btn btn-outline-purple btn-text-large m-2" role="button" href="/apply">Apply Now</a>
+              </div>
+              </div>
+            </div>
+          </div>
+            <div class="container" style="padding:0">
+            <div class="row">
+              <div class="col-lg-12">
+                  <div class="col-lg-3 btn-container">
+                  <p class="card__text"><b>Dates:</b> {{dates}}{{title}}{{/dates}}</p>
+              </div>
+              <div class="col-lg-3 btn-container">
+                  <p class="card__text"><b>Time:</b> {{time}}{{title}}{{/time}}</p>
+              </div>
+                    <div class="col-lg-3 btn-container">
+            <p class="card__text"><b>Grades:</b> {{grade_level}}{{title}}{{/grade_level}}</p>
+              </div>
+              <div class="col-lg-3 btn-container">
+            <p class="card__text"><b>Tuition:</b> {{tuition}}{{title}}{{/tuition}}</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div>
+      <a data-toggle="collapse" href="#collapse-college-{{slug}}" class="btn btn-outline-purple btn-text-small">+ View Course Description</a>
+      <div id="collapse-college-{{slug}}" class="collapse">
+              <p class="card__body">
+              {{ content }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+      {{ /collection:courses }}
+  </section>
+      </div>
 </section>
