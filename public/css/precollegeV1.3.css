@@ -650,12 +650,7 @@ footer {
     font-weight: 600;
     background-color: #fff;
     border-style: solid;
-    color: #461d7c;
     text-decoration: none
-}
-
-.btn.btn:hover {
-    background-color: #461D7C
 }
 
 .btn.btn--rounded-none {
@@ -2994,6 +2989,18 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   background-color: #461d7c;
 }
 
+.btn-outline-gold {
+  color: #95710F;
+  border-color: rgba(149, 113, 15, 0.8);
+  border-width: 2px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+}
+
+.btn-outline-gold:hover {
+  color: #95710F;
+}
+
 .btn-text-extra-large {
   font-size: 2rem;
 }
@@ -3090,7 +3097,7 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
 
 .scrollBox{
     border: 2px;
-    height: 700px;
+    height: 1000px;
     overflow: auto;
 }
 

@@ -13,9 +13,11 @@ time:
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612468555
+updated_at: 1612563052
 sponsor:
   - lsu-college-of-science
+simplified_type:
+  - on-campus
 id: 358c376a-6275-4d42-ad5c-ec0a25e05a4a
 ---
 <b>To Prepare For:</b> Algebra 1, Geometry, Algebra 2, Precalculus<br><br>

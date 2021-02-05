@@ -1,7 +1,7 @@
 ---
 title: 'REHAMS Engineering'
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612468696
+updated_at: 1612563070
 grade_level:
   - high-school
 course_type:
@@ -16,6 +16,8 @@ tuition:
   - tbd
 sponsor:
   - lsu-college-of-engineering
+simplified_type:
+  - on-campus
 id: b198a7eb-59b8-4d48-82d9-2e65d795e786
 ---
 <b>GPA Required:</b> 3.0 or greater<br><br>

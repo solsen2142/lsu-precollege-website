@@ -1,23 +1,25 @@
-<section class="grey-box" id="high-school">
 <div class="container">
   <div class="row pt-4 pb-4">
       <div class="col-lg-12">
-        <h2 class="home-header" style="padding-bottom:0; font-weight:700">Full Course Listings</h2>
-        <h3 class="home-subheader"><b>Registration Opens February 15th!</b></h3>
-        <p class="lead">Our full course list can be found below. Click "View Course Description" to learn more!</p>
+        <h2 class="home-center" style="padding-bottom:0; font-weight:700">Full Course Listings</h2>
+        <h3 class="home-subheader text-center"><b>Registration Opens February 15th!</b></h3>
+        <p class="lead">Our full course list for Summer 2021 can be found below. Use the checkboxes to filter courses based on course type, subject area, and grade level.</p>
       </div>
   </div>
+</div>
 
+<section class="grey-box">
+<div class="container">
   <div class="row pt-4 pb-4">
 
-    <div class="col-lg-3">
-      <div class="border-2 p-2 bg-white">
+    <div class="col-lg-3 p-1">
+      <div class="border-2 p-3 bg-white">
         <!--<label for="course_name"><b>Course name:</b></label>
         <input type="text" id="course_name" name="course_name">-->
 
         <p class="lead mb-1"><b>Course Type:</b></p>
-        <label><input type="checkbox" name="courseType" value="on-campus"/> On-Campus</label><br>
-        <label><input type="checkbox" name="courseType" value="virtual"/> Virtual</label><br>
+        <label><input type="checkbox" name="courseType" value="On-Campus"/> On-Campus</label><br>
+        <label><input type="checkbox" name="courseType" value="Virtual"/> Virtual</label><br>
         <p class="lead mb-1"><b>Subject Area:</b></p>
         {{ taxonomy:subject_area }}
           <label><input type="checkbox" name="subjectArea" value="{{ title }}" /> {{ title }}</label><br>
@@ -28,50 +30,46 @@
       </div>
     </div>
 
-    <div class="col-lg-9 scrollBox">
+    <div class="col-lg-9 scrollBox p-1">
     <section class="cards">
     {{ collection:courses }}
 
-      <section id="{{slug}}" class="mt-1 mb-1 w-full" name="Courses" courseType="{{course_type}}{{title}}{{/course_type}}" subjectArea="{{subject_area}}{{title}}{{/subject_area}}" gradeLevel="{{grade_level}}{{title}}{{/grade_level}}">
-      <article class="h-full border border-black light-background">
-        <div class="card__inner">
-        	<div class="container" style="padding:0">
-        	  <div class="row">
-        	  	<div class="col-lg-12">
-	          	  <div class="col-lg-8 btn-container" style="text-align:left;padding-left:0">
-		          		<p class="card__topic">{{course_type}}{{title}}{{/course_type}}</p>
-          				<h3 class="card__title">{{ title }}</h3>
-		      		  </div>
-		         	  <div class="col-lg-4 btn-container">
-						<a data-toggle="collapse" href="#collapse-college-{{slug}}" class="btn btn-outline-purple btn-text-large m-2">+ Course Description</a>
-		         	</div>
-                </div>
-                <div class="col-lg-12">
-                    <div id="collapse-college-{{slug}}" class="collapse">
-                        <div class="container" style="padding:0">
-                          <div class="row">
-                            <div class="col-lg-12">
-								<div class="col-lg-4 btn-container">
-					          		<p class="card__text"><b>Dates:</b> {{dates}}{{title}}{{/dates}}</p>
-					      		</div>
-			                    <div class="col-lg-4 btn-container">
-									<p class="card__text"><b>Grades:</b> {{grade_level}}{{title}}{{/grade_level}}</p>
-					         	</div>
-					         	<div class="col-lg-4 btn-container">
-									<p class="card__text"><b>Tuition:</b> {{tuition}}{{title}}{{/tuition}}</p>
-					         	</div>
-                            <div class="col-lg-12">
-                              <p class="card__body">
-                              {{ content }}
-                              </p>
-                          </div>
-                        </div>
+      <section id="{{slug}}" class="mt-1 mb-1 w-full" name="Courses" courseType="{{simplified_type}}{{title}}{{/simplified_type}}" subjectArea="{{subject_area}}{{title}}{{/subject_area}}" gradeLevel="{{grade_level}}{{title}}{{/grade_level}}">
+        <article class="h-full border border-black light-background">
+          <div class="card__inner">
+            <div class="container" style="padding:0">
+              <div class="row">
 
-                    </div>
-	          	</div>
-	      	  </div>
-      		</div>
+                <div class="col-lg-6 btn-container" style="text-align:left;padding-left:0">
+                  <p class="card__topic">
+                    <div class="btn btn-outline-gold btn-text-large">{{simplified_type}}{{title}}{{/simplified_type}}</div>
+                    <div class="btn btn-outline-gold btn-text-large">{{grade_level}}{{title}}{{/grade_level}}</div>
+                    <!--{{ subject_area }}
+                      <div class="btn btn-outline-gold">{{title}}</div>
+                    {{ /subject_area}}-->
+                  </p>
+                  <h3 class="card__title text-center">{{ title }}</h3>
+
+                  <div class="col-lg-12">
+                    <img src="/assets/img/coursePics/{{slug}}.jpg" alt="{{title}}-related stock image" style="object-fit: cover; float:left; padding-bottom:1rem">
+                  </div>
+                  <div class="col-lg-12 btn-container">
+                    <p class="card__text"><b>Dates:</b> {{dates}}{{title}}{{/dates}}</p>
+                  </div>
+                  <div class="col-lg-12 btn-container">
+                    <p class="card__text"><b>Grades:</b> {{grade_level}}{{title}}{{/grade_level}}</p>
+                  </div>
+                  <div class="col-lg-12 btn-container">
+                    <p class="card__text"><b>Tuition:</b> {{tuition}}{{title}}{{/tuition}}</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <p class="card__body pt-0">{{ content }}</p>
+                </div>
+            </div>
           </div>
+        </div>
       </article>
     </section>
       {{ /collection:courses }}
@@ -97,8 +95,7 @@
   	el.addEventListener('change', toggleCheckbox);
   });
 
-  function intersection(first, second)
-  {
+  function intersection(first, second) {
       var s = new Set(second);
       return first.filter(item => s.has(item));
   };
@@ -116,15 +113,6 @@
 
   function setVisibility() {
     courses.map(function (el) {
-      //Parse course type (ie, "On-Campus Academy" -> "on-campus")
-      courseTypeRaw = el.getAttribute('courseType')
-      if (courseTypeRaw.includes("On-Campus")) {
-        courseTypeParsed = "on-campus"
-      }
-      else if (courseTypeRaw.includes("Virtual")) {
-        courseTypeParsed = "virtual"
-      }
-
       //Parse grade level (ie, "6th-8th" -> "middle-school")
       gradeLevelRaw = el.getAttribute('gradeLevel')
       if (gradeLevelRaw.includes('10') || gradeLevelRaw.includes('11') || gradeLevelRaw.includes('12')) {
@@ -135,8 +123,20 @@
       }
 
       //Check that the checkbox conditions are met for each set of checkboxes
-      var courseType = checked.courseType.length ? checked.courseType.includes(courseTypeParsed) : true;
-      var subjectArea = checked.subjectArea.length ? checked.subjectArea.includes(el.getAttribute('subjectArea')) : true;
+      var courseType = checked.courseType.length ? checked.courseType.includes(courseTypeRaw = el.getAttribute('courseType')) : true;
+      //Make sure all subject areas for each course are considered (some have more than one)
+      if (checked.subjectArea.length != 0) {
+        var subjectArea = false
+        for (i = 0; i < checked.subjectArea.length; i++) {
+          if (el.getAttribute('subjectArea').includes(checked.subjectArea[i])) {
+            subjectArea = true
+          }
+        }
+      }
+      else {
+        var subjectArea = true
+      }
+      //var subjectArea = checked.subjectArea.length ? checked.subjectArea.includes(el.getAttribute('subjectArea')) : true;
       var gradeLevel = checked.gradeLevel.length ? checked.gradeLevel.includes(gradeLevelParsed) : true;
       if (courseType && subjectArea && gradeLevel) {
         el.style.display = 'block';

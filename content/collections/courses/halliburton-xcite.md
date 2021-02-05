@@ -13,9 +13,11 @@ time:
 tuition:
   - tbd
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612468633
+updated_at: 1612563009
 sponsor:
   - lsu-college-of-engineering
+simplified_type:
+  - on-campus
 id: 813f4717-dc9d-4e18-948a-bcccb6477b43
 ---
 <b>GPA Required:</b> 2.9 or greater<br><br>

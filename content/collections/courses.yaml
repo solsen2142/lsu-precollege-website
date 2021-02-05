@@ -9,6 +9,7 @@ taxonomies:
   - time
   - tuition
   - sponsor
+  - simplified_type
 revisions: false
 sort_dir: asc
 date_behavior:

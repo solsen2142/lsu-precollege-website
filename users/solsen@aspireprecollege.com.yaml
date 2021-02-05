@@ -11,4 +11,4 @@ preferences:
       columns:
         - title
         - slug
-        - course_type
+        - simplified_type
