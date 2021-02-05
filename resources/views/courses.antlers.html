@@ -16,20 +16,23 @@
         <input type="text" id="course_name" name="course_name">-->
 
         <p class="lead mb-1"><b>Course Type:</b></p>
-        <label><input type="checkbox" name="course_type" value="on-campus"/> On-Campus</label><br>
-        <label><input type="checkbox" name="course_type" value="virtual"/> Virtual</label><br>
+        <label><input type="checkbox" name="courseType" value="on-campus"/> On-Campus</label><br>
+        <label><input type="checkbox" name="courseType" value="virtual"/> Virtual</label><br>
         <p class="lead mb-1"><b>Subject Area:</b></p>
         {{ taxonomy:subject_area }}
-          <label><input type="checkbox" name="subject" value="{{ title }}" /> {{ title }}</label><br>
+          <label><input type="checkbox" name="subjectArea" value="{{ title }}" /> {{ title }}</label><br>
         {{ /taxonomy:subject_area }}
+        <p class="lead mb-1"><b>Grade Level:</b></p>
+        <label><input type="checkbox" name="gradeLevel" value="middle-school"/> Middle School</label><br>
+        <label><input type="checkbox" name="gradeLevel" value="high-school"/> High School</label><br>
       </div>
     </div>
 
     <div class="col-lg-9 scrollBox">
     <section class="cards">
-    {{ collection:courses :taxonomy:tags="get:tags"}}
+    {{ collection:courses }}
 
-      <section id="{{slug}}" class="mt-1 mb-1 w-full pl-1 pr-1" name="Courses" course_type="{{course_type}}{{title}}{{/course_type}}" subject="{{subject_area}}{{title}}{{/subject_area}}">
+      <section id="{{slug}}" class="mt-1 mb-1 w-full" name="Courses" courseType="{{course_type}}{{title}}{{/course_type}}" subjectArea="{{subject_area}}{{title}}{{/subject_area}}" gradeLevel="{{grade_level}}{{title}}{{/grade_level}}">
       <article class="h-full border border-black light-background">
         <div class="card__inner">
         	<div class="container" style="padding:0">
@@ -81,126 +84,65 @@
 </section>
 
 <script>
-  var checkboxes = document.querySelectorAll("input[type=checkbox]")
-  var courseTypeCheckboxes = document.querySelectorAll("input[type=checkbox][name=course_type]")
-  var subjectCheckboxes = document.querySelectorAll("input[type=checkbox][name=subject]")
-  var courses = document.querySelectorAll("section[name=Courses]")
-  let enabledTags = []
+  //This script filters the course list based on checkbox selections
+  var checkboxes = document.querySelectorAll("input[type=checkbox]");
+  var courses = Array.from(document.querySelectorAll("section[name=Courses]"));
+  var checked = {};
 
-  checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
+  getChecked('courseType');
+  getChecked('subjectArea');
+  getChecked('gradeLevel');
 
-      courses.forEach(function(course) {
-        course.style.display = "none"
-      })
-
-      enabledCourseTags = Array.from(courseTypeCheckboxes)
-        .filter(i => i.checked)
-        .map(i => i.value)
-      courseTagsEmpty = (enabledCourseTags === undefined || enabledCourseTags.length == 0)
-      console.log(enabledCourseTags)
-      
-      enabledSubjectTags = Array.from(subjectCheckboxes)
-        .filter(i => i.checked)
-        .map(i => i.value)
-      subjectTagsEmpty = (enabledSubjectTags === undefined || enabledSubjectTags.length == 0)
-      
-      courses.forEach(function(course) {
-        courseSubject = course.getAttribute("subject")
-        courseTypeRaw = course.getAttribute("course_type")
-        courseType = "None"
-        if (courseTypeRaw.includes("On-Campus")) {
-          courseType = "on-campus"
-        }
-        else if (courseTypeRaw.includes("Virtual")) {
-          courseType = "virtual"
-        }
-
-        if (subjectTagsEmpty && courseTagsEmpty) {
-          course.style.display = "block"
-        }
-        else if (courseTagsEmpty) {
-          if (enabledSubjectTags.includes(courseSubject)) {
-            course.style.display = "block"
-          }
-        }
-        else if (subjectTagsEmpty) {
-          if (enabledCourseTags.includes(courseType)) {
-            course.style.display = "block"
-          }
-        }
-        else {
-          if (enabledCourseTags.includes(courseType) && enabledSubjectTags.includes(courseSubject)){
-            course.style.display = "block"
-          }
-        }
-      })
-
-    })
+  Array.prototype.forEach.call(checkboxes, function (el) {
+  	el.addEventListener('change', toggleCheckbox);
   });
 
+  function intersection(first, second)
+  {
+      var s = new Set(second);
+      return first.filter(item => s.has(item));
+  };
 
+  function toggleCheckbox(e) {
+    getChecked(e.target.name);
+    setVisibility();
+  }
 
+  function getChecked(name) {
+    checked[name] = Array.from(document.querySelectorAll('input[name=' + name + ']:checked')).map(function (el) {
+      return el.value;
+    });
+  }
 
-  /*checkboxes.forEach(function(checkbox) {
-    courseCheckbox.addEventListener('change', function() {
-
-      courses.forEach(function(course) {
-        course.style.display = "block"
-      })
-
-      enabledTags = Array.from(courseTypeCheckboxes)
-        .filter(i => i.checked)
-        .map(i => i.value)
-                
-      courses.forEach(function(course) {
-        course_type_raw = course.getAttribute("type")
-        if (course_type_raw.includes("On-Campus")) {
-          course_type = "on-campus"
-        }
-        else if (course_type_raw.includes("Virtual")) {
-          course_type = "virtual"
-        }
-        if (!enabledTags.includes(course_type)) {
-            course.style.display = "none"
-        }
-      })
-
-      courseTagsEmpty = (enabledTags === undefined || enabledTags.length == 0)
-      if (courseTagsEmpty) {
-        courses.forEach(function(course) {
-          course.style.display = "block"
-        })
+  function setVisibility() {
+    courses.map(function (el) {
+      //Parse course type (ie, "On-Campus Academy" -> "on-campus")
+      courseTypeRaw = el.getAttribute('courseType')
+      if (courseTypeRaw.includes("On-Campus")) {
+        courseTypeParsed = "on-campus"
+      }
+      else if (courseTypeRaw.includes("Virtual")) {
+        courseTypeParsed = "virtual"
       }
 
-    })
-  })
-  
-  subjectAreaCheckboxes.forEach(function(subjectCheckbox) {
-    subjectCheckbox.addEventListener('change', function() {
-
-      enabledTags = Array.from(subjectAreaCheckboxes)
-        .filter(i => i.checked)
-        .map(i => i.value)
-
-      courses.forEach(function(course) {
-        course.style.display = "block"
-      })
-                
-      courses.forEach(function(course) {
-        subject_area = course.getAttribute("subject")
-        if (!enabledTags.includes(subject_area)) {
-            course.style.display = "none"
-        }
-      })
-
-      subjectTagsEmpty = (enabledTags === undefined || enabledTags.length == 0)
-      if (subjectTagsEmpty) {
-        courses.forEach(function(course) {
-          course.style.display = "block"
-        })
+      //Parse grade level (ie, "6th-8th" -> "middle-school")
+      gradeLevelRaw = el.getAttribute('gradeLevel')
+      if (gradeLevelRaw.includes('10') || gradeLevelRaw.includes('11') || gradeLevelRaw.includes('12')) {
+      	gradeLevelParsed = 'high-school'
+      }
+      else if (gradeLevelRaw.includes('6') || gradeLevelRaw.includes('7')) {
+      	gradeLevelParsed = 'middle-school'
       }
 
-    })
-  });*/
+      //Check that the checkbox conditions are met for each set of checkboxes
+      var courseType = checked.courseType.length ? checked.courseType.includes(courseTypeParsed) : true;
+      var subjectArea = checked.subjectArea.length ? checked.subjectArea.includes(el.getAttribute('subjectArea')) : true;
+      var gradeLevel = checked.gradeLevel.length ? checked.gradeLevel.includes(gradeLevelParsed) : true;
+      if (courseType && subjectArea && gradeLevel) {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+  }
 </script>
