@@ -3088,6 +3088,31 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     max-width:800px
 }
 
+.scrollBox{
+    border: 2px;
+    height: 700px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    
+::-webkit-scrollbar-track {
+border: 1px solid #461d7c;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #461d7c;  
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: rgba(70, 29, 124, 0.8);  
+}
+
 @media screen and (max-width:1000px){
 .homepageTitle{
     padding-top:0;

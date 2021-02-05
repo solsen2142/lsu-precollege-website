@@ -7,32 +7,39 @@
         <p class="lead">Our full course list can be found below. Click "View Course Description" to learn more!</p>
       </div>
   </div>
-<!--
+
   <div class="row pt-4 pb-4">
 
-    <div class="col-lg-4">
-        <label for="course_name"><b>Course name:</b></label>
-        <input type="text" id="course_name" name="course_name">
+    <div class="col-lg-3">
+      <div class="border-2 p-2 bg-white">
+        <!--<label for="course_name"><b>Course name:</b></label>
+        <input type="text" id="course_name" name="course_name">-->
 
-        <label><input type="checkbox" name="tags[]" value="on-campus" {{ if (get:tags|contains:on-campus) }}checked="checked"{{ /if }} /> On-Campus</label><br>
-        <label><input type="checkbox" name="tags[]" value="virtual" {{ if (get:tags|contains:virtual-academy) }}checked="checked"{{ /if }} /> Virtual</label><br>
+        <p class="lead mb-1"><b>Course Type:</b></p>
+        <label><input type="checkbox" name="course_type" value="on-campus"/> On-Campus</label><br>
+        <label><input type="checkbox" name="course_type" value="virtual"/> Virtual</label><br>
+        <p class="lead mb-1"><b>Subject Area:</b></p>
+        {{ taxonomy:subject_area }}
+          <label><input type="checkbox" name="subject" value="{{ title }}" /> {{ title }}</label><br>
+        {{ /taxonomy:subject_area }}
+      </div>
     </div>
 
-    <div class="col-lg-8">-->
+    <div class="col-lg-9 scrollBox">
     <section class="cards">
     {{ collection:courses :taxonomy:tags="get:tags"}}
 
-      <section id="{{slug}}" class="mt-1 mb-1 w-full pl-1 pr-1">
-      <article class="h-full border border-black light-background" id="courses">
+      <section id="{{slug}}" class="mt-1 mb-1 w-full pl-1 pr-1" name="Courses" course_type="{{course_type}}{{title}}{{/course_type}}" subject="{{subject_area}}{{title}}{{/subject_area}}">
+      <article class="h-full border border-black light-background">
         <div class="card__inner">
         	<div class="container" style="padding:0">
         	  <div class="row">
         	  	<div class="col-lg-12">
-	          	  	<div class="col-lg-8 btn-container" style="text-align:left;padding-left:0">
+	          	  <div class="col-lg-8 btn-container" style="text-align:left;padding-left:0">
 		          		<p class="card__topic">{{course_type}}{{title}}{{/course_type}}</p>
           				<h3 class="card__title">{{ title }}</h3>
-		      		</div>
-		         	<div class="col-lg-4 btn-container">
+		      		  </div>
+		         	  <div class="col-lg-4 btn-container">
 						<a data-toggle="collapse" href="#collapse-college-{{slug}}" class="btn btn-outline-purple btn-text-large m-2">+ Course Description</a>
 		         	</div>
                 </div>
@@ -41,16 +48,13 @@
                         <div class="container" style="padding:0">
                           <div class="row">
                             <div class="col-lg-12">
-								<div class="col-lg-3 btn-container">
+								<div class="col-lg-4 btn-container">
 					          		<p class="card__text"><b>Dates:</b> {{dates}}{{title}}{{/dates}}</p>
 					      		</div>
-					      		<div class="col-lg-3 btn-container">
-					          		<p class="card__text"><b>Time:</b> {{time}}{{title}}{{/time}}</p>
-					         	</div>
-			                    <div class="col-lg-3 btn-container">
+			                    <div class="col-lg-4 btn-container">
 									<p class="card__text"><b>Grades:</b> {{grade_level}}{{title}}{{/grade_level}}</p>
 					         	</div>
-					         	<div class="col-lg-3 btn-container">
+					         	<div class="col-lg-4 btn-container">
 									<p class="card__text"><b>Tuition:</b> {{tuition}}{{title}}{{/tuition}}</p>
 					         	</div>
                             <div class="col-lg-12">
@@ -69,28 +73,134 @@
     </section>
       {{ /collection:courses }}
   </section>
-<!--
+
     </div>
   </div>
--->
+
 </div>
 </section>
-<!--
-<script>
-    // Select all checkboxes with the name 'settings' using querySelectorAll.
-    var checkboxes = document.querySelectorAll("input[type=checkbox][name=tags");
-    let enabledTags = []
 
-    // Use Array.forEach to add an event listener to each checkbox.
-    checkboxes.forEach(function(checkbox) {
-      checkbox.addEventListener('change', function() {
-        enabledTags = 
-          Array.from(checkboxes) // Convert checkboxes to an array to use filter and map.
-          .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
-          .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
-          
-        console.log(enabledTags)
+<script>
+  var checkboxes = document.querySelectorAll("input[type=checkbox]")
+  var courseTypeCheckboxes = document.querySelectorAll("input[type=checkbox][name=course_type]")
+  var subjectCheckboxes = document.querySelectorAll("input[type=checkbox][name=subject]")
+  var courses = document.querySelectorAll("section[name=Courses]")
+  let enabledTags = []
+
+  checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+
+      courses.forEach(function(course) {
+        course.style.display = "none"
       })
-    });
+
+      enabledCourseTags = Array.from(courseTypeCheckboxes)
+        .filter(i => i.checked)
+        .map(i => i.value)
+      courseTagsEmpty = (enabledCourseTags === undefined || enabledCourseTags.length == 0)
+      console.log(enabledCourseTags)
+      
+      enabledSubjectTags = Array.from(subjectCheckboxes)
+        .filter(i => i.checked)
+        .map(i => i.value)
+      subjectTagsEmpty = (enabledSubjectTags === undefined || enabledSubjectTags.length == 0)
+      
+      courses.forEach(function(course) {
+        courseSubject = course.getAttribute("subject")
+        courseTypeRaw = course.getAttribute("course_type")
+        courseType = "None"
+        if (courseTypeRaw.includes("On-Campus")) {
+          courseType = "on-campus"
+        }
+        else if (courseTypeRaw.includes("Virtual")) {
+          courseType = "virtual"
+        }
+
+        if (subjectTagsEmpty && courseTagsEmpty) {
+          course.style.display = "block"
+        }
+        else if (courseTagsEmpty) {
+          if (enabledSubjectTags.includes(courseSubject)) {
+            course.style.display = "block"
+          }
+        }
+        else if (subjectTagsEmpty) {
+          if (enabledCourseTags.includes(courseType)) {
+            course.style.display = "block"
+          }
+        }
+        else {
+          if (enabledCourseTags.includes(courseType) && enabledSubjectTags.includes(courseSubject)){
+            course.style.display = "block"
+          }
+        }
+      })
+
+    })
+  });
+
+
+
+
+  /*checkboxes.forEach(function(checkbox) {
+    courseCheckbox.addEventListener('change', function() {
+
+      courses.forEach(function(course) {
+        course.style.display = "block"
+      })
+
+      enabledTags = Array.from(courseTypeCheckboxes)
+        .filter(i => i.checked)
+        .map(i => i.value)
+                
+      courses.forEach(function(course) {
+        course_type_raw = course.getAttribute("type")
+        if (course_type_raw.includes("On-Campus")) {
+          course_type = "on-campus"
+        }
+        else if (course_type_raw.includes("Virtual")) {
+          course_type = "virtual"
+        }
+        if (!enabledTags.includes(course_type)) {
+            course.style.display = "none"
+        }
+      })
+
+      courseTagsEmpty = (enabledTags === undefined || enabledTags.length == 0)
+      if (courseTagsEmpty) {
+        courses.forEach(function(course) {
+          course.style.display = "block"
+        })
+      }
+
+    })
+  })
+  
+  subjectAreaCheckboxes.forEach(function(subjectCheckbox) {
+    subjectCheckbox.addEventListener('change', function() {
+
+      enabledTags = Array.from(subjectAreaCheckboxes)
+        .filter(i => i.checked)
+        .map(i => i.value)
+
+      courses.forEach(function(course) {
+        course.style.display = "block"
+      })
+                
+      courses.forEach(function(course) {
+        subject_area = course.getAttribute("subject")
+        if (!enabledTags.includes(subject_area)) {
+            course.style.display = "none"
+        }
+      })
+
+      subjectTagsEmpty = (enabledTags === undefined || enabledTags.length == 0)
+      if (subjectTagsEmpty) {
+        courses.forEach(function(course) {
+          course.style.display = "block"
+        })
+      }
+
+    })
+  });*/
 </script>
--->
