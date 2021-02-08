@@ -1,7 +1,7 @@
 <section class="container">
     <div class="row pt-4 pb-4">
       <div class="col-lg-12">
-        <h1 class="home-center">Discover your passion at LSU Pre-College.</h1>
+        <h1 class="home-center">Unleash your education at LSU Pre-College.</h1>
         <h2 class="lead pb-2" style="text-align:center; font-size:2rem"><b>Virtual and On-Campus Summer Programs at LSU</b></h2>
         <p class="lead"><b>LSU Pre-College</b> offers top-notch educational experiences for 6th-12th grade students each summer. From biology to math to engineering, there’s something for every student in our lineup of virtual and on-campus courses.
         <p class="lead"><b>Learning Virtually:</b> With our virtual courses, you'll receive synchronous (live and online) instruction featuring engaging projects and activities, as well as one-on-one and small-group support, in a variety of disciplines. Learning virtually can be challenging - but it doesn’t have to be. With student engagement and learning as our primary goals, our courses incorporate live virtual class every weekday, hands-on activities and projects, and a mailed learning kit with course supplies for every course. It's virtual learning at its best!</p>
@@ -36,11 +36,34 @@
     </div>
 </section>
 
-<section class="grey-box" id="virtual">
-<div class="container">
+<section class="grey-box" id="on-campus">
+  <div class="container">
+    <div class="row pt-4 pb-4">
+        <div class="col-lg-8">
+          <h2 class="home-header" style="padding-bottom:0; font-weight:700">On-Campus Programs</h2>
+          <h3 class="home-subheader">June and July | Middle and High School</h3>
+          <h3 class="home-subheader"><b>Registration Opens Feburary 15th!</b></h3>
+          <p class="lead">Our on-campus courses prepare you for your future middle school, high school, and college classes. You'll learn alongside like-minded students from experts in the field, all in classrooms on LSU's campus. Our full selection of on-campus classes is below:</p>
+          {{ collection:courses taxonomy:course_type="on-campus-academy|on-campus-experience" }}
+          <ul class="lead" style="padding-left:0.5rem;text-align:left">
+              <li><b><a href="/academy#{{slug}}">{{title}}</a></b></li>
+          </ul>
+          {{ /collection:courses }}
+        </div>
+  
+        <div class="col-lg-4 my-auto academy-image">
+          <img src="/assets/img/academy/college-readiness.jpg" alt="Student preparing for college" style="padding-bottom:3rem">
+          <img src="/assets/img/academy/insights-field.jpg" alt="Teacher giving lecture" style="padding-bottom:3rem">
+          <img src="/assets/img/home/engineering.jpg" alt="Student preparing for college">
+        </div>
+      </div>
+  </div>
+</section>
+
+<div class="container" id="virtual">
   <div class="row pt-4 pb-4">
       <div class="col-lg-8">
-        <h2 class="home-header" style="padding-bottom:0; font-weight:700">Virtual Courses</h2>
+        <h2 class="home-header" style="padding-bottom:0; font-weight:700">Virtual Programs</h2>
         <h3 class="home-subheader">June and July | Middle and High School</h3>
         <h3 class="home-subheader"><b>Registration Opens Feburary 15th!</b></h3>
         <p class="lead">Our virtual courses are designed to provide the same level of learning as our on-campus courses from the safety and convenience of your home. These courses are taught by expert educators, and participants will cement their knowledge through interactive lessons that include lectures, activities, and projects. Click on any of our courses below to learn more!</p>
@@ -54,29 +77,6 @@
       <div class="col-lg-4 my-auto academy-image">
         <img src="/assets/img/home/premed.jpg" alt="Student preparing for college" style="padding-bottom:3rem">
         <img src="/assets/img/academy/math-tall.jpg" alt="Teacher giving lecture">
-      </div>
-    </div>
-</div>
-</section>
-
-<div class="container" id="on-campus">
-  <div class="row pt-4 pb-4">
-      <div class="col-lg-8">
-        <h2 class="home-header" style="padding-bottom:0; font-weight:700">On-Campus Courses</h2>
-        <h3 class="home-subheader">June and July | Middle and High School</h3>
-        <h3 class="home-subheader"><b>Registration Opens Feburary 15th!</b></h3>
-        <p class="lead">Our on-campus courses prepare you for your future middle school, high school, and college classes. You'll learn alongside like-minded students from experts in the field, all in classrooms on LSU's campus. Our full selection of on-campus classes is below:</p>
-        {{ collection:courses taxonomy:course_type="on-campus-academy|on-campus-experience" }}
-        <ul class="lead" style="padding-left:0.5rem;text-align:left">
-            <li><b><a href="/academy#{{slug}}">{{title}}</a></b></li>
-        </ul>
-        {{ /collection:courses }}
-      </div>
-
-      <div class="col-lg-4 my-auto academy-image">
-        <img src="/assets/img/academy/college-readiness.jpg" alt="Student preparing for college" style="padding-bottom:3rem">
-        <img src="/assets/img/academy/insights-field.jpg" alt="Teacher giving lecture" style="padding-bottom:3rem">
-        <img src="/assets/img/home/engineering.jpg" alt="Student preparing for college">
       </div>
     </div>
 </div>
