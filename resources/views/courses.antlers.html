@@ -18,8 +18,8 @@
         <input type="text" id="course_name" name="course_name">-->
 
         <p class="lead mb-1"><b>Course Type:</b></p>
-        <label><input type="checkbox" name="courseType" value="On-Campus"/> On-Campus</label><br>
-        <label><input type="checkbox" name="courseType" value="Virtual"/> Virtual</label><br>
+        <label><input type="checkbox" name="courseType" value="On-Campus" id="on-campus"/> On-Campus</label><br>
+        <label><input type="checkbox" name="courseType" value="Virtual" id="virtual"/> Virtual</label><br>
         <p class="lead mb-1"><b>Subject Area:</b></p>
         {{ taxonomy:subject_area }}
           <label><input type="checkbox" name="subjectArea" value="{{ title }}" /> {{ title }}</label><br>
@@ -27,6 +27,9 @@
         <p class="lead mb-1"><b>Grade Level:</b></p>
         <label><input type="checkbox" name="gradeLevel" value="middle-school"/> Middle School</label><br>
         <label><input type="checkbox" name="gradeLevel" value="high-school"/> High School</label><br>
+        <p class="lead mb-1"><b>Dates:</b></p>
+        <label><input type="checkbox" name="dates" value="June"/> June</label><br>
+        <label><input type="checkbox" name="dates" value="July"/> July</label><br>
       </div>
     </div>
 
@@ -34,7 +37,7 @@
     <section class="cards">
     {{ collection:courses }}
 
-      <section id="{{slug}}" class="mt-1 mb-1 w-full" name="Courses" courseType="{{simplified_type}}{{title}}{{/simplified_type}}" subjectArea="{{subject_area}}{{title}}{{/subject_area}}" gradeLevel="{{grade_level}}{{title}}{{/grade_level}}">
+      <section id="{{slug}}" class="mt-1 mb-1 w-full" name="Courses" courseType="{{simplified_type}}{{title}}{{/simplified_type}}" subjectArea="{{subject_area}}{{title}}{{/subject_area}}" gradeLevel="{{grade_level}}{{title}}{{/grade_level}}" dates="{{dates}}{{title}}{{/dates}}">
         <article class="h-full border border-black light-background">
           <div class="card__inner">
             <div class="container" style="padding:0">
@@ -65,6 +68,9 @@
                 </div>
 
                 <div class="col-lg-6">
+                  {{ if sponsor }}
+                    <p class="card__body pt-0 text-right"><b>Sponsored by: {{sponsor}}{{title}}{{/sponsor}}</b></p>
+                  {{ /if }}
                   <p class="card__body pt-0">{{ content }}</p>
                 </div>
             </div>
@@ -82,6 +88,28 @@
 </section>
 
 <script>
+   //This function allows passing of checkbox values via URL
+  document.body.onload = function() {
+  var url = window.location.href
+  var hash = url.substring(url.indexOf("?")+1)
+  var parts = hash.split("&");
+  for(var i = 0; i < parts.length; i++) {
+    var variable = parts[0].split("=");
+    if(variable[0] === "virtual") {
+        checkbox = document.getElementById("virtual");
+        checkbox.setAttribute("checked", true);
+        getChecked(checkbox.name)
+        setVisibility()
+    }
+    else if(variable[0] == "on-campus") {
+        checkbox = document.getElementById("on-campus");
+        checkbox.setAttribute("checked", true);
+        getChecked(checkbox.name)
+        setVisibility()
+    }
+  }
+};
+ 
   //This script filters the course list based on checkbox selections
   var checkboxes = document.querySelectorAll("input[type=checkbox]");
   var courses = Array.from(document.querySelectorAll("section[name=Courses]"));
@@ -90,9 +118,10 @@
   getChecked('courseType');
   getChecked('subjectArea');
   getChecked('gradeLevel');
+  getChecked('dates')
 
   Array.prototype.forEach.call(checkboxes, function (el) {
-  	el.addEventListener('change', toggleCheckbox);
+  	el.addEventListener('input', toggleCheckbox);
   });
 
   function intersection(first, second) {
@@ -122,8 +151,33 @@
       	gradeLevelParsed = 'middle-school'
       }
 
+      //Parse month (ie, "June 28 - July 16" -> ["June", "July"])
+      monthRaw = el.getAttribute('dates')
+      monthParsed = []
+      if (monthRaw.includes('June')) {
+        monthParsed.push('June');
+      }
+      if (monthRaw.includes('July')) {
+        monthParsed.push('July')
+      }
+
       //Check that the checkbox conditions are met for each set of checkboxes
       var courseType = checked.courseType.length ? checked.courseType.includes(courseTypeRaw = el.getAttribute('courseType')) : true;
+      var gradeLevel = checked.gradeLevel.length ? checked.gradeLevel.includes(gradeLevelParsed) : true;
+
+      //Include courses that overlap with either June or July
+      if (checked.dates.length != 0) {
+        var dates = false
+        for (i = 0; i < checked.dates.length; i++) {
+          if (monthParsed.includes(checked.dates[i])) {
+            dates = true
+          }
+        }
+      }
+      else {
+        var dates = true
+      }
+
       //Make sure all subject areas for each course are considered (some have more than one)
       if (checked.subjectArea.length != 0) {
         var subjectArea = false
@@ -136,9 +190,8 @@
       else {
         var subjectArea = true
       }
-      //var subjectArea = checked.subjectArea.length ? checked.subjectArea.includes(el.getAttribute('subjectArea')) : true;
-      var gradeLevel = checked.gradeLevel.length ? checked.gradeLevel.includes(gradeLevelParsed) : true;
-      if (courseType && subjectArea && gradeLevel) {
+
+      if (courseType && subjectArea && gradeLevel && dates) {
         el.style.display = 'block';
       } else {
         el.style.display = 'none';

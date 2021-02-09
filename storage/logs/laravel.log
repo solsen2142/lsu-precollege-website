@@ -12375,3 +12375,1050 @@ Using cache file ".php_cs.cache".
 #66 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #67 {main}
 "} 
+[2021-02-09 17:21:35] local.ERROR: Modifier [not] not found {"userId":"70be348e-36d9-4d70-82ce-0b173a724d68","exception":"[object] (Facade\\Ignition\\Exceptions\\ViewExceptionWithSolution(code: 0): Modifier [not] not found at /home/vagrant/code/resources/views/courses.antlers.html:0)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Loader.php(19): ()
+#1 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(180): Statamic\\Modifiers\\Loader->load()
+#2 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(146): Statamic\\Modifiers\\Modify->runModifier()
+#3 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(124): Statamic\\Modifiers\\Modify->modify()
+#4 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1459): Statamic\\Modifiers\\Modify->__call()
+#5 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1175): Statamic\\View\\Antlers\\Parser->runModifier()
+#6 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(998): Statamic\\View\\Antlers\\Parser->getVariable()
+#7 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(818): Statamic\\View\\Antlers\\Parser->processConditionVar()
+#8 [internal function]: Statamic\\View\\Antlers\\Parser->Statamic\\View\\Antlers\\{closure}()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1592): preg_replace_callback()
+#10 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(817): Statamic\\View\\Antlers\\Parser->preg_replace_callback()
+#11 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(690): Statamic\\View\\Antlers\\Parser->processCondition()
+#12 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#13 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#14 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#15 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#16 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#17 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#18 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#19 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#20 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#21 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#22 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#23 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#24 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#25 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#26 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#27 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#31 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#32 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#34 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#36 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#47 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#49 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#51 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#57 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#58 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#60 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#61 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#62 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#63 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#64 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#68 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#69 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#70 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#71 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#72 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#73 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#74 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#75 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#76 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#77 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#78 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#79 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#80 {main}
+
+[previous exception] [object] (Statamic\\Modifiers\\ModifierNotFoundException(code: 0): Modifier [not] not found at /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Loader.php:19)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(180): Statamic\\Modifiers\\Loader->load()
+#1 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(146): Statamic\\Modifiers\\Modify->runModifier()
+#2 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(124): Statamic\\Modifiers\\Modify->modify()
+#3 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1459): Statamic\\Modifiers\\Modify->__call()
+#4 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1175): Statamic\\View\\Antlers\\Parser->runModifier()
+#5 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(998): Statamic\\View\\Antlers\\Parser->getVariable()
+#6 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(818): Statamic\\View\\Antlers\\Parser->processConditionVar()
+#7 [internal function]: Statamic\\View\\Antlers\\Parser->Statamic\\View\\Antlers\\{closure}()
+#8 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1592): preg_replace_callback()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(817): Statamic\\View\\Antlers\\Parser->preg_replace_callback()
+#10 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(690): Statamic\\View\\Antlers\\Parser->processCondition()
+#11 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#12 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#13 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#14 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#15 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#16 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#17 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#18 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#19 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#20 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#21 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#22 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#23 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#24 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#25 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#26 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#27 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#31 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#33 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#35 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#48 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#49 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#50 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#51 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#52 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#57 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#59 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#61 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#63 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#68 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#69 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#70 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#71 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#72 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#73 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#74 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#75 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#76 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#77 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#78 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#79 {main}
+"} 
+[2021-02-09 17:21:57] local.ERROR: syntax error, unexpected '=' on line 32 of:
+
+
+
+      <section id="{{slug}}" class="mt-1 mb-1 w-full" name="Courses" courseType="tag_pair_3a6f450658eeedc196e93cbd047d25d3" subjectArea="tag_pair_f7779f5d3ea8e00c70bad7f84b57b8d1" gradeLevel="tag_pair_97724d916e592d9b9857233f2f494187" dates="tag_pair_7955bede58053087283c0c06f31ed26d">
+        <article class="h-full border border-black light-background">
+          <div class="card__inner">
+            <div class="container" style="padding:0">
+              <div class="row">
+
+                <div class="col-lg-6 btn-container" style="text-align:left;padding-left:0">
+                  <p class="card__topic">
+                    <div class="btn btn-outline-gold btn-text-large">tag_pair_3a6f450658eeedc196e93cbd047d25d3</div>
+                    <div class="btn btn-outline-gold btn-text-large">tag_pair_97724d916e592d9b9857233f2f494187</div>
+                    <!--tag_pair_948840c29b40efbe5f5b02fd33b80924-->
+                  </p>
+                  <h3 class="card__title text-center">{{ title }}</h3>
+
+                  <div class="col-lg-12">
+                    <img src="/assets/img/coursePics/{{slug}}.jpg" alt="{{title}}-related stock image" style="object-fit: cover; float:left; padding-bottom:1rem">
+                  </div>
+                  <div class="col-lg-12 btn-container">
+                    <p class="card__text"><b>Dates:</b> tag_pair_7955bede58053087283c0c06f31ed26d</p>
+                  </div>
+                  <div class="col-lg-12 btn-container">
+                    <p class="card__text"><b>Grades:</b> tag_pair_97724d916e592d9b9857233f2f494187</p>
+                  </div>
+                  <div class="col-lg-12 btn-container">
+                    <p class="card__text"><b>Tuition:</b> tag_pair_4abfdeba20731c4b6adb1bbc6743a04d</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <p class="card__body pt-0"><?php if (null="is_empty"): ?>tag_pair_531273763bf6a97f41ae0ff7c8ba8fc8<?php endif; ?></p>
+                  <p class="card__body pt-0">{{ content }}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+       {"userId":"70be348e-36d9-4d70-82ce-0b173a724d68","exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '=' on line 32 of:
+
+
+
+      <section id=\"{{slug}}\" class=\"mt-1 mb-1 w-full\" name=\"Courses\" courseType=\"tag_pair_3a6f450658eeedc196e93cbd047d25d3\" subjectArea=\"tag_pair_f7779f5d3ea8e00c70bad7f84b57b8d1\" gradeLevel=\"tag_pair_97724d916e592d9b9857233f2f494187\" dates=\"tag_pair_7955bede58053087283c0c06f31ed26d\">
+        <article class=\"h-full border border-black light-background\">
+          <div class=\"card__inner\">
+            <div class=\"container\" style=\"padding:0\">
+              <div class=\"row\">
+
+                <div class=\"col-lg-6 btn-container\" style=\"text-align:left;padding-left:0\">
+                  <p class=\"card__topic\">
+                    <div class=\"btn btn-outline-gold btn-text-large\">tag_pair_3a6f450658eeedc196e93cbd047d25d3</div>
+                    <div class=\"btn btn-outline-gold btn-text-large\">tag_pair_97724d916e592d9b9857233f2f494187</div>
+                    <!--tag_pair_948840c29b40efbe5f5b02fd33b80924-->
+                  </p>
+                  <h3 class=\"card__title text-center\">{{ title }}</h3>
+
+                  <div class=\"col-lg-12\">
+                    <img src=\"/assets/img/coursePics/{{slug}}.jpg\" alt=\"{{title}}-related stock image\" style=\"object-fit: cover; float:left; padding-bottom:1rem\">
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Dates:</b> tag_pair_7955bede58053087283c0c06f31ed26d</p>
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Grades:</b> tag_pair_97724d916e592d9b9857233f2f494187</p>
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Tuition:</b> tag_pair_4abfdeba20731c4b6adb1bbc6743a04d</p>
+                  </div>
+                </div>
+
+                <div class=\"col-lg-6\">
+                  <p class=\"card__body pt-0\"><?php if (null=\"is_empty\"): ?>tag_pair_531273763bf6a97f41ae0ff7c8ba8fc8<?php endif; ?></p>
+                  <p class=\"card__body pt-0\">{{ content }}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+       at /home/vagrant/code/resources/views/courses.antlers.html:0)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1353): ()
+#1 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(710): Statamic\\View\\Antlers\\Parser->parsePhp()
+#2 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#3 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#4 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#5 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#6 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#7 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#8 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#10 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#11 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#12 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#13 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#14 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#15 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#16 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#17 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#18 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#19 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#20 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#21 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#22 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#24 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#26 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#32 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#34 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#36 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#47 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#48 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#49 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#50 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#51 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#52 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#58 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#60 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#61 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#62 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#63 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#64 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#68 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#69 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#70 {main}
+
+[previous exception] [object] (Statamic\\View\\Antlers\\SyntaxError(code: 0): syntax error, unexpected '=' on line 32 of:
+
+
+
+      <section id=\"{{slug}}\" class=\"mt-1 mb-1 w-full\" name=\"Courses\" courseType=\"tag_pair_3a6f450658eeedc196e93cbd047d25d3\" subjectArea=\"tag_pair_f7779f5d3ea8e00c70bad7f84b57b8d1\" gradeLevel=\"tag_pair_97724d916e592d9b9857233f2f494187\" dates=\"tag_pair_7955bede58053087283c0c06f31ed26d\">
+        <article class=\"h-full border border-black light-background\">
+          <div class=\"card__inner\">
+            <div class=\"container\" style=\"padding:0\">
+              <div class=\"row\">
+
+                <div class=\"col-lg-6 btn-container\" style=\"text-align:left;padding-left:0\">
+                  <p class=\"card__topic\">
+                    <div class=\"btn btn-outline-gold btn-text-large\">tag_pair_3a6f450658eeedc196e93cbd047d25d3</div>
+                    <div class=\"btn btn-outline-gold btn-text-large\">tag_pair_97724d916e592d9b9857233f2f494187</div>
+                    <!--tag_pair_948840c29b40efbe5f5b02fd33b80924-->
+                  </p>
+                  <h3 class=\"card__title text-center\">{{ title }}</h3>
+
+                  <div class=\"col-lg-12\">
+                    <img src=\"/assets/img/coursePics/{{slug}}.jpg\" alt=\"{{title}}-related stock image\" style=\"object-fit: cover; float:left; padding-bottom:1rem\">
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Dates:</b> tag_pair_7955bede58053087283c0c06f31ed26d</p>
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Grades:</b> tag_pair_97724d916e592d9b9857233f2f494187</p>
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Tuition:</b> tag_pair_4abfdeba20731c4b6adb1bbc6743a04d</p>
+                  </div>
+                </div>
+
+                <div class=\"col-lg-6\">
+                  <p class=\"card__body pt-0\"><?php if (null=\"is_empty\"): ?>tag_pair_531273763bf6a97f41ae0ff7c8ba8fc8<?php endif; ?></p>
+                  <p class=\"card__body pt-0\">{{ content }}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+       at /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php:1353)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(710): Statamic\\View\\Antlers\\Parser->parsePhp()
+#1 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#2 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#3 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#4 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#5 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#6 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#7 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#8 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#10 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#11 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#12 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#13 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#14 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#15 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#16 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#17 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#18 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#19 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#20 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#21 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#22 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#23 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#24 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#25 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#27 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#31 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#33 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#35 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#36 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#47 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#49 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#51 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#57 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#59 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#61 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#63 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#68 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#69 {main}
+"} 
+[2021-02-09 17:25:24] local.ERROR: Modifier [not_empty] not found {"userId":"70be348e-36d9-4d70-82ce-0b173a724d68","exception":"[object] (Facade\\Ignition\\Exceptions\\ViewExceptionWithSolution(code: 0): Modifier [not_empty] not found at /home/vagrant/code/resources/views/courses.antlers.html:0)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Loader.php(19): ()
+#1 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(180): Statamic\\Modifiers\\Loader->load()
+#2 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(146): Statamic\\Modifiers\\Modify->runModifier()
+#3 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(124): Statamic\\Modifiers\\Modify->modify()
+#4 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1459): Statamic\\Modifiers\\Modify->__call()
+#5 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1175): Statamic\\View\\Antlers\\Parser->runModifier()
+#6 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(998): Statamic\\View\\Antlers\\Parser->getVariable()
+#7 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(818): Statamic\\View\\Antlers\\Parser->processConditionVar()
+#8 [internal function]: Statamic\\View\\Antlers\\Parser->Statamic\\View\\Antlers\\{closure}()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1592): preg_replace_callback()
+#10 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(817): Statamic\\View\\Antlers\\Parser->preg_replace_callback()
+#11 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(690): Statamic\\View\\Antlers\\Parser->processCondition()
+#12 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#13 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#14 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#15 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#16 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#17 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#18 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#19 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#20 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#21 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#22 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#23 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#24 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#25 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#26 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#27 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#31 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#32 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#34 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#36 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#47 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#49 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#51 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#57 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#58 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#60 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#61 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#62 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#63 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#64 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#68 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#69 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#70 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#71 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#72 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#73 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#74 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#75 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#76 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#77 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#78 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#79 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#80 {main}
+
+[previous exception] [object] (Statamic\\Modifiers\\ModifierNotFoundException(code: 0): Modifier [not_empty] not found at /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Loader.php:19)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(180): Statamic\\Modifiers\\Loader->load()
+#1 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(146): Statamic\\Modifiers\\Modify->runModifier()
+#2 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(124): Statamic\\Modifiers\\Modify->modify()
+#3 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1459): Statamic\\Modifiers\\Modify->__call()
+#4 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1175): Statamic\\View\\Antlers\\Parser->runModifier()
+#5 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(998): Statamic\\View\\Antlers\\Parser->getVariable()
+#6 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(818): Statamic\\View\\Antlers\\Parser->processConditionVar()
+#7 [internal function]: Statamic\\View\\Antlers\\Parser->Statamic\\View\\Antlers\\{closure}()
+#8 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1592): preg_replace_callback()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(817): Statamic\\View\\Antlers\\Parser->preg_replace_callback()
+#10 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(690): Statamic\\View\\Antlers\\Parser->processCondition()
+#11 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#12 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#13 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#14 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#15 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#16 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#17 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#18 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#19 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#20 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#21 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#22 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#23 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#24 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#25 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#26 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#27 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#31 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#33 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#35 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#48 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#49 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#50 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#51 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#52 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#57 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#59 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#61 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#63 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#68 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#69 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#70 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#71 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#72 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#73 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#74 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#75 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#76 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#77 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#78 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#79 {main}
+"} 
+[2021-02-09 17:25:36] local.ERROR: Modifier [not_empty] not found {"userId":"70be348e-36d9-4d70-82ce-0b173a724d68","exception":"[object] (Facade\\Ignition\\Exceptions\\ViewExceptionWithSolution(code: 0): Modifier [not_empty] not found at /home/vagrant/code/resources/views/courses.antlers.html:0)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Loader.php(19): ()
+#1 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(180): Statamic\\Modifiers\\Loader->load()
+#2 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(146): Statamic\\Modifiers\\Modify->runModifier()
+#3 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(124): Statamic\\Modifiers\\Modify->modify()
+#4 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1459): Statamic\\Modifiers\\Modify->__call()
+#5 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1175): Statamic\\View\\Antlers\\Parser->runModifier()
+#6 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(998): Statamic\\View\\Antlers\\Parser->getVariable()
+#7 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(818): Statamic\\View\\Antlers\\Parser->processConditionVar()
+#8 [internal function]: Statamic\\View\\Antlers\\Parser->Statamic\\View\\Antlers\\{closure}()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1592): preg_replace_callback()
+#10 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(817): Statamic\\View\\Antlers\\Parser->preg_replace_callback()
+#11 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(690): Statamic\\View\\Antlers\\Parser->processCondition()
+#12 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#13 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#14 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#15 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#16 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#17 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#18 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#19 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#20 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#21 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#22 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#23 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#24 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#25 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#26 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#27 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#31 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#32 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#34 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#36 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#47 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#49 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#51 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#57 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#58 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#60 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#61 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#62 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#63 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#64 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#68 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#69 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#70 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#71 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#72 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#73 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#74 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#75 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#76 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#77 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#78 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#79 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#80 {main}
+
+[previous exception] [object] (Statamic\\Modifiers\\ModifierNotFoundException(code: 0): Modifier [not_empty] not found at /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Loader.php:19)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(180): Statamic\\Modifiers\\Loader->load()
+#1 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(146): Statamic\\Modifiers\\Modify->runModifier()
+#2 /home/vagrant/code/vendor/statamic/cms/src/Modifiers/Modify.php(124): Statamic\\Modifiers\\Modify->modify()
+#3 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1459): Statamic\\Modifiers\\Modify->__call()
+#4 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1175): Statamic\\View\\Antlers\\Parser->runModifier()
+#5 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(998): Statamic\\View\\Antlers\\Parser->getVariable()
+#6 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(818): Statamic\\View\\Antlers\\Parser->processConditionVar()
+#7 [internal function]: Statamic\\View\\Antlers\\Parser->Statamic\\View\\Antlers\\{closure}()
+#8 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1592): preg_replace_callback()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(817): Statamic\\View\\Antlers\\Parser->preg_replace_callback()
+#10 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(690): Statamic\\View\\Antlers\\Parser->processCondition()
+#11 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#12 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#13 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#14 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#15 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#16 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#17 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#18 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#19 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#20 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#21 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#22 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#23 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#24 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#25 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#26 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#27 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#31 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#33 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#35 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#48 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#49 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#50 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#51 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#52 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#57 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#59 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#61 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#63 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#68 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#69 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#70 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#71 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#72 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#73 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#74 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#75 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#76 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#77 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#78 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#79 {main}
+"} 
+[2021-02-09 17:27:16] local.ERROR: syntax error, unexpected 'endif' (T_ENDIF), expecting end of file on line 34 of:
+
+
+
+      <section id="{{slug}}" class="mt-1 mb-1 w-full" name="Courses" courseType="tag_pair_3a6f450658eeedc196e93cbd047d25d3" subjectArea="tag_pair_f7779f5d3ea8e00c70bad7f84b57b8d1" gradeLevel="tag_pair_97724d916e592d9b9857233f2f494187" dates="tag_pair_7955bede58053087283c0c06f31ed26d">
+        <article class="h-full border border-black light-background">
+          <div class="card__inner">
+            <div class="container" style="padding:0">
+              <div class="row">
+
+                <div class="col-lg-6 btn-container" style="text-align:left;padding-left:0">
+                  <p class="card__topic">
+                    <div class="btn btn-outline-gold btn-text-large">tag_pair_3a6f450658eeedc196e93cbd047d25d3</div>
+                    <div class="btn btn-outline-gold btn-text-large">tag_pair_97724d916e592d9b9857233f2f494187</div>
+                    <!--tag_pair_948840c29b40efbe5f5b02fd33b80924-->
+                  </p>
+                  <h3 class="card__title text-center">{{ title }}</h3>
+
+                  <div class="col-lg-12">
+                    <img src="/assets/img/coursePics/{{slug}}.jpg" alt="{{title}}-related stock image" style="object-fit: cover; float:left; padding-bottom:1rem">
+                  </div>
+                  <div class="col-lg-12 btn-container">
+                    <p class="card__text"><b>Dates:</b> tag_pair_7955bede58053087283c0c06f31ed26d</p>
+                  </div>
+                  <div class="col-lg-12 btn-container">
+                    <p class="card__text"><b>Grades:</b> tag_pair_97724d916e592d9b9857233f2f494187</p>
+                  </div>
+                  <div class="col-lg-12 btn-container">
+                    <p class="card__text"><b>Tuition:</b> tag_pair_4abfdeba20731c4b6adb1bbc6743a04d</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <?php if (false): ?>
+                    <p class="card__body pt-0 text-right">Sponsored by: <b>tag_pair_531273763bf6a97f41ae0ff7c8ba8fc8<?php endif; ?></b></p>
+                  <?php endif; ?>
+                  <p class="card__body pt-0">{{ content }}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+       {"userId":"70be348e-36d9-4d70-82ce-0b173a724d68","exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected 'endif' (T_ENDIF), expecting end of file on line 34 of:
+
+
+
+      <section id=\"{{slug}}\" class=\"mt-1 mb-1 w-full\" name=\"Courses\" courseType=\"tag_pair_3a6f450658eeedc196e93cbd047d25d3\" subjectArea=\"tag_pair_f7779f5d3ea8e00c70bad7f84b57b8d1\" gradeLevel=\"tag_pair_97724d916e592d9b9857233f2f494187\" dates=\"tag_pair_7955bede58053087283c0c06f31ed26d\">
+        <article class=\"h-full border border-black light-background\">
+          <div class=\"card__inner\">
+            <div class=\"container\" style=\"padding:0\">
+              <div class=\"row\">
+
+                <div class=\"col-lg-6 btn-container\" style=\"text-align:left;padding-left:0\">
+                  <p class=\"card__topic\">
+                    <div class=\"btn btn-outline-gold btn-text-large\">tag_pair_3a6f450658eeedc196e93cbd047d25d3</div>
+                    <div class=\"btn btn-outline-gold btn-text-large\">tag_pair_97724d916e592d9b9857233f2f494187</div>
+                    <!--tag_pair_948840c29b40efbe5f5b02fd33b80924-->
+                  </p>
+                  <h3 class=\"card__title text-center\">{{ title }}</h3>
+
+                  <div class=\"col-lg-12\">
+                    <img src=\"/assets/img/coursePics/{{slug}}.jpg\" alt=\"{{title}}-related stock image\" style=\"object-fit: cover; float:left; padding-bottom:1rem\">
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Dates:</b> tag_pair_7955bede58053087283c0c06f31ed26d</p>
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Grades:</b> tag_pair_97724d916e592d9b9857233f2f494187</p>
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Tuition:</b> tag_pair_4abfdeba20731c4b6adb1bbc6743a04d</p>
+                  </div>
+                </div>
+
+                <div class=\"col-lg-6\">
+                  <?php if (false): ?>
+                    <p class=\"card__body pt-0 text-right\">Sponsored by: <b>tag_pair_531273763bf6a97f41ae0ff7c8ba8fc8<?php endif; ?></b></p>
+                  <?php endif; ?>
+                  <p class=\"card__body pt-0\">{{ content }}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+       at /home/vagrant/code/resources/views/courses.antlers.html:0)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(1353): ()
+#1 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(710): Statamic\\View\\Antlers\\Parser->parsePhp()
+#2 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#3 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#4 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#5 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#6 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#7 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#8 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#10 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#11 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#12 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#13 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#14 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#15 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#16 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#17 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#18 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#19 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#20 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#21 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#22 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#24 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#26 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#32 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#34 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#36 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#47 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#48 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#49 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#50 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#51 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#52 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#58 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#60 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#61 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#62 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#63 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#64 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#68 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#69 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#70 {main}
+
+[previous exception] [object] (Statamic\\View\\Antlers\\SyntaxError(code: 0): syntax error, unexpected 'endif' (T_ENDIF), expecting end of file on line 34 of:
+
+
+
+      <section id=\"{{slug}}\" class=\"mt-1 mb-1 w-full\" name=\"Courses\" courseType=\"tag_pair_3a6f450658eeedc196e93cbd047d25d3\" subjectArea=\"tag_pair_f7779f5d3ea8e00c70bad7f84b57b8d1\" gradeLevel=\"tag_pair_97724d916e592d9b9857233f2f494187\" dates=\"tag_pair_7955bede58053087283c0c06f31ed26d\">
+        <article class=\"h-full border border-black light-background\">
+          <div class=\"card__inner\">
+            <div class=\"container\" style=\"padding:0\">
+              <div class=\"row\">
+
+                <div class=\"col-lg-6 btn-container\" style=\"text-align:left;padding-left:0\">
+                  <p class=\"card__topic\">
+                    <div class=\"btn btn-outline-gold btn-text-large\">tag_pair_3a6f450658eeedc196e93cbd047d25d3</div>
+                    <div class=\"btn btn-outline-gold btn-text-large\">tag_pair_97724d916e592d9b9857233f2f494187</div>
+                    <!--tag_pair_948840c29b40efbe5f5b02fd33b80924-->
+                  </p>
+                  <h3 class=\"card__title text-center\">{{ title }}</h3>
+
+                  <div class=\"col-lg-12\">
+                    <img src=\"/assets/img/coursePics/{{slug}}.jpg\" alt=\"{{title}}-related stock image\" style=\"object-fit: cover; float:left; padding-bottom:1rem\">
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Dates:</b> tag_pair_7955bede58053087283c0c06f31ed26d</p>
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Grades:</b> tag_pair_97724d916e592d9b9857233f2f494187</p>
+                  </div>
+                  <div class=\"col-lg-12 btn-container\">
+                    <p class=\"card__text\"><b>Tuition:</b> tag_pair_4abfdeba20731c4b6adb1bbc6743a04d</p>
+                  </div>
+                </div>
+
+                <div class=\"col-lg-6\">
+                  <?php if (false): ?>
+                    <p class=\"card__body pt-0 text-right\">Sponsored by: <b>tag_pair_531273763bf6a97f41ae0ff7c8ba8fc8<?php endif; ?></b></p>
+                  <?php endif; ?>
+                  <p class=\"card__body pt-0\">{{ content }}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+       at /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php:1353)
+[stacktrace]
+#0 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(710): Statamic\\View\\Antlers\\Parser->parsePhp()
+#1 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(170): Statamic\\View\\Antlers\\Parser->parseConditionPairs()
+#2 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(41): Statamic\\View\\Antlers\\Parser->parse()
+#3 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(731): Statamic\\View\\Antlers\\AntlersLoop->Statamic\\View\\Antlers\\{closure}()
+#4 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/AntlersLoop.php(45): Illuminate\\Support\\Collection->reduce()
+#5 [internal function]: Statamic\\View\\Antlers\\AntlersLoop->__toString()
+#6 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(640): addcslashes()
+#7 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(175): Statamic\\View\\Antlers\\Parser->parseCallbackTags()
+#8 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Parser.php(130): Statamic\\View\\Antlers\\Parser->parse()
+#9 /home/vagrant/code/vendor/statamic/cms/src/View/Antlers/Engine.php(89): Statamic\\View\\Antlers\\Parser->parseView()
+#10 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(139): Statamic\\View\\Antlers\\Engine->get()
+#11 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#12 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#13 /home/vagrant/code/vendor/statamic/cms/src/View/View.php(74): Illuminate\\View\\View->render()
+#14 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(144): Statamic\\View\\View->render()
+#15 /home/vagrant/code/vendor/statamic/cms/src/Http/Responses/DataResponse.php(45): Statamic\\Http\\Responses\\DataResponse->contents()
+#16 /home/vagrant/code/vendor/statamic/cms/src/Structures/Page.php(288): Statamic\\Http\\Responses\\DataResponse->toResponse()
+#17 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(765): Statamic\\Structures\\Page->toResponse()
+#18 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(752): Illuminate\\Routing\\Router::toResponse()
+#19 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(692): Illuminate\\Routing\\Router->prepareResponse()
+#20 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#21 /home/vagrant/code/vendor/statamic/cms/src/StaticCaching/Middleware/Cache.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#22 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\StaticCaching\\Middleware\\Cache->handle()
+#23 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/Localize.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#24 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\Localize->handle()
+#25 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/StacheLock.php(29): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\StacheLock->handle()
+#27 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#29 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#31 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#33 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#35 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle()
+#36 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#38 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#40 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(694): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate\\Routing\\Router->runRouteWithinStack()
+#43 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(635): Illuminate\\Routing\\Router->runRoute()
+#44 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Routing/Router.php(624): Illuminate\\Routing\\Router->dispatchToRoute()
+#45 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#46 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#47 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/CheckMultisite.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\CheckMultisite->handle()
+#49 /home/vagrant/code/vendor/statamic/cms/src/Http/Middleware/PoweredByHeader.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Statamic\\Http\\Middleware\\PoweredByHeader->handle()
+#51 /home/vagrant/code/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#53 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#55 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#57 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#59 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#61 /home/vagrant/code/vendor/fruitcake/laravel-cors/src/HandleCors.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#63 /home/vagrant/code/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#65 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#67 /home/vagrant/code/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#68 /home/vagrant/code/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#69 {main}
+"} 

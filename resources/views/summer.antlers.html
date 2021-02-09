@@ -43,12 +43,26 @@
           <h2 class="home-header" style="padding-bottom:0; font-weight:700">On-Campus Programs</h2>
           <h3 class="home-subheader">June and July | Middle and High School</h3>
           <h3 class="home-subheader"><b>Registration Opens Feburary 15th!</b></h3>
-          <p class="lead">Our on-campus courses prepare you for your future middle school, high school, and college classes. You'll learn alongside like-minded students from experts in the field, all in classrooms on LSU's campus. Our full selection of on-campus classes is below:</p>
+          <p class="lead">Our on-campus courses prepare you for your future middle school, high school, and college classes. You'll learn alongside like-minded students from experts in the field, all in classrooms on LSU's campus. Click on the course buttons below to learn more, or view our full course list here:</p>
+          <div class="col-lg-12 mt-3 mb-4 btn-container">
+            <a href="/courses?on-campus" class="btn btn-outline-purple" role="button" style="font-size:1.3rem">View On-Campus Courses</a>
+          </div>
+          <div class="row">
           {{ collection:courses taxonomy:course_type="on-campus-academy|on-campus-experience" }}
-          <ul class="lead" style="padding-left:0.5rem;text-align:left">
-              <li><b><a href="/academy#{{slug}}">{{title}}</a></b></li>
-          </ul>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class="card mb-4 box-shadow">
+              <a href="/courses#{{slug}}">
+              <div class="overlay-container">
+                <img src="/assets/img/coursePics/{{slug}}.jpg" alt="{{title}}-related stock image" class="overlay-image" style="width:100%">
+                <div class="overlay-middle">
+                  <div class="overlay-text">{{title}}</div>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
           {{ /collection:courses }}
+          </div>
         </div>
   
         <div class="col-lg-4 my-auto academy-image">
@@ -62,23 +76,37 @@
 
 <div class="container" id="virtual">
   <div class="row pt-4 pb-4">
-      <div class="col-lg-8">
-        <h2 class="home-header" style="padding-bottom:0; font-weight:700">Virtual Programs</h2>
-        <h3 class="home-subheader">June and July | Middle and High School</h3>
-        <h3 class="home-subheader"><b>Registration Opens Feburary 15th!</b></h3>
-        <p class="lead">Our virtual courses are designed to provide the same level of learning as our on-campus courses from the safety and convenience of your home. These courses are taught by expert educators, and participants will cement their knowledge through interactive lessons that include lectures, activities, and projects. Click on any of our courses below to learn more!</p>
-        {{ collection:courses taxonomy:course_type="virtual-academy|virtual-experience" }}
-        <ul class="lead" style="padding-left:0.5rem;text-align:left">
-            <li><b><a href="/virtual#{{slug}}">{{title}}</a></b></li>
-        </ul>
-        {{ /collection:courses }}
-      </div>
+    <div class="col-lg-4 my-auto academy-image">
+      <img src="/assets/img/home/premed.jpg" alt="Student preparing for college" style="padding-bottom:3rem">
+      <img src="/assets/img/academy/math-tall.jpg" alt="Teacher giving lecture">
+    </div>
 
-      <div class="col-lg-4 my-auto academy-image">
-        <img src="/assets/img/home/premed.jpg" alt="Student preparing for college" style="padding-bottom:3rem">
-        <img src="/assets/img/academy/math-tall.jpg" alt="Teacher giving lecture">
+    <div class="col-lg-8">
+      <h2 class="home-header" style="padding-bottom:0; font-weight:700">Virtual Programs</h2>
+      <h3 class="home-subheader">June and July | Middle and High School</h3>
+      <h3 class="home-subheader"><b>Registration Opens Feburary 15th!</b></h3>
+      <p class="lead">Our virtual courses are designed to provide the same level of learning as our on-campus courses from the safety and convenience of your home. These courses are taught by expert educators, and participants will cement their knowledge through interactive lessons that include lectures, activities, and projects. Click on the course buttons below to learn more, or view our full course list here:</p>
+      <div class="col-lg-12 mt-3 mb-4 btn-container">
+        <a href="/courses?virtual" class="btn btn-outline-purple" role="button" style="font-size:1.3rem">View Virtual Courses</a>
+      </div>
+      <div class="row">
+      {{ collection:courses taxonomy:course_type="virtual-academy|virtual-experience" }}
+      <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+        <div class="card mb-4 box-shadow">
+          <a href="/courses#{{slug}}">
+          <div class="overlay-container">
+            <img src="/assets/img/coursePics/{{slug}}.jpg" alt="{{title}}-related stock image" class="overlay-image" style="width:100%">
+            <div class="overlay-middle">
+              <div class="overlay-text">{{title}}</div>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+      {{ /collection:courses }}
       </div>
     </div>
+  </div>
 </div>
 
 <section class="grey-box">

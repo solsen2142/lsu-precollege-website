@@ -2957,10 +2957,9 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
   opacity: 1; }
 
 .overlay-text {
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 500;
   font-family: roboto;
-  line-height: 22px;
   color: #ffffff;
   text-shadow: 1px 1px rgba(70, 70, 70, 0.8);
   padding: 0 0 6px 0; }

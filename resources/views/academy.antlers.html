@@ -28,7 +28,10 @@
         <h3 class="home-subheader">July | High School | On LSU's Campus</h3>
         <h3 class="home-subheader"><b>Registration opens Feburary 15th!</b></h3>
         <p class="lead"><b>Session 1:</b> July 6 - July 16<br><b>Session 2:</b> July 19 - July 30</p>
-        <p class="lead">Our on-campus courses prepare you for your future middle school, high school, and college classes. You will learn alongside like-minded students from experts in the field, all in classrooms on LSU's campus. Our full selection of on-campus classes is below:</p>
+        <p class="lead">Our on-campus courses prepare you for your future middle school, high school, and college classes. You will learn alongside like-minded students from experts in the field, all in classrooms on LSU's campus. Click on the course buttons below to learn more, or view our full course list here:</p>
+        <div class="col-lg-12 mt-3 mb-4 btn-container">
+          <a href="/courses?on-campus" class="btn btn-outline-purple" role="button" style="font-size:1.3rem">View On-Campus Courses</a>
+        </div>
       </div>
 
       <div class="col-lg-4 my-auto academy-image">
@@ -36,59 +39,22 @@
       </div>
     </div>
 
-<div class="space-t-sm space-b- max-w-2xl mx-auto">
-  <section class="cards">
+  <div class="row">
     {{ collection:courses taxonomy:course_type="on-campus-academy" }}
-
-      <section id="{{slug}}" class="mt-4 mb-4 w-full pl-1 pr-1">
-      <article class="h-full border border-black light-background">
-        <div class="card__inner">
-        	<div class="container" style="padding:0">
-        	  <div class="row">
-        	  	<div class="col-lg-12">
-	          	  	<div class="col-lg-8 btn-container" style="text-align:left;padding-left:0">
-		          		<p class="card__topic">{{course_type}}{{title}}{{/course_type}} | {{sponsor}}{{title}}{{/sponsor}}</p>
-          				<h3 class="card__title">{{ title }}</h3>
-		      		</div>
-		         	<div class="col-lg-4 btn-container">
-						<a class="btn btn-outline-purple btn-text-large m-2" role="button" href="/apply">Apply Now</a>
-		         	</div>
-	          	</div>
-	      	  </div>
-      		</div>
-          	<div class="container" style="padding:0">
-	          <div class="row">
-	          	<div class="col-lg-12">
-                <div class="col-lg-3 btn-container">
-                  <p class="card__text"><b>Dates:</b> {{dates}}{{title}}{{/dates}}</p>
-              </div>
-              <div class="col-lg-3 btn-container">
-                  <p class="card__text"><b>Time:</b> {{time}}{{title}}{{/time}}</p>
-              </div>
-                    <div class="col-lg-3 btn-container">
-            <p class="card__text"><b>Grades:</b> {{grade_level}}{{title}}{{/grade_level}}</p>
-              </div>
-              <div class="col-lg-3 btn-container">
-            <p class="card__text"><b>Tuition:</b> {{tuition}}{{title}}{{/tuition}}</p>
-              </div>
-	          	</div>
-	      	  </div>
-      		</div>
-      	  <div>
-			<a data-toggle="collapse" href="#collapse-college-{{slug}}" class="btn btn-outline-purple btn-text-small">+ View Course Description</a>
-			<div id="collapse-college-{{slug}}" class="collapse">
-              <p class="card__body">
-              {{ content }}
-              </p>
-            </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+      <div class="card mb-4 box-shadow">
+        <a href="/courses#{{slug}}">
+        <div class="overlay-container">
+          <img src="/assets/img/coursePics/{{slug}}.jpg" alt="{{title}}-related stock image" class="overlay-image" style="width:100%">
+          <div class="overlay-middle">
+            <div class="overlay-text">{{title}}</div>
           </div>
         </div>
-      </article>
-    </section>
-
-      {{ /collection:courses }}
-  </section>
-</div>
+        </a>
+      </div>
+    </div>
+    {{ /collection:courses }}
+  </div>
 </div>
 
 <section class="grey-box">
@@ -98,7 +64,10 @@
         <h2 class="home-header" style="padding-bottom:0; font-weight:700">On-Campus Experiences</h2>
         <h3 class="home-subheader">June - July | Middle and High School | On LSU's Campus</h3>
         <h3 class="home-subheader"><b>Registration Opens Feburary 15th!</b></h3>
-        <p class="lead">Sponsored by Departments across LSU's campus, our Educational Experiences are designed to provide fun, educational programs on campus for middle and high schoolers during the summer.</p>
+        <p class="lead">Sponsored by Departments across LSU's campus, our Educational Experiences are designed to provide fun, educational programs on campus for middle and high schoolers during the summer. Click on the course buttons below to learn more, or view our full course list here:</p>
+        <div class="col-lg-12 mt-3 mb-4 btn-container">
+          <a href="/courses?on-campus" class="btn btn-outline-purple" role="button" style="font-size:1.3rem">View On-Campus Courses</a>
+        </div>
       </div>
 
       <div class="col-lg-4 my-auto academy-image">
@@ -106,57 +75,21 @@
       </div>
     </div>
 
-
-    <section class="cards">
-    {{ collection:courses taxonomy:course_type="on-campus-experience" }}
-
-      <section id="{{slug}}" class="mt-4 mb-4 w-full pl-1 pr-1">
-      <article class="h-full border border-black light-background">
-        <div class="card__inner">
-          <div class="container" style="padding:0">
-            <div class="row">
-              <div class="col-lg-12">
-                  <div class="col-lg-8 btn-container" style="text-align:left;padding-left:0">
-                  <p class="card__topic">{{course_type}}{{title}}{{/course_type}} | {{sponsor}}{{title}}{{/sponsor}}</p>
-                  <h3 class="card__title">{{ title }}</h3>
-              </div>
-              <div class="col-lg-4 btn-container">
-            <a class="btn btn-outline-purple btn-text-large m-2" role="button" href="/apply">Apply Now</a>
-              </div>
-              </div>
+    <div class="row">
+      {{ collection:courses taxonomy:course_type="on-campus-experience" }}
+      <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+        <div class="card mb-4 box-shadow">
+          <a href="/courses#{{slug}}">
+          <div class="overlay-container">
+            <img src="/assets/img/coursePics/{{slug}}.jpg" alt="{{title}}-related stock image" class="overlay-image" style="width:100%">
+            <div class="overlay-middle">
+              <div class="overlay-text">{{title}}</div>
             </div>
           </div>
-            <div class="container" style="padding:0">
-            <div class="row">
-              <div class="col-lg-12">
-                  <div class="col-lg-3 btn-container">
-                  <p class="card__text"><b>Dates:</b> {{dates}}{{title}}{{/dates}}</p>
-              </div>
-              <div class="col-lg-3 btn-container">
-                  <p class="card__text"><b>Time:</b> {{time}}{{title}}{{/time}}</p>
-              </div>
-                    <div class="col-lg-3 btn-container">
-            <p class="card__text"><b>Grades:</b> {{grade_level}}{{title}}{{/grade_level}}</p>
-              </div>
-              <div class="col-lg-3 btn-container">
-            <p class="card__text"><b>Tuition:</b> {{tuition}}{{title}}{{/tuition}}</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div>
-      <a data-toggle="collapse" href="#collapse-college-{{slug}}" class="btn btn-outline-purple btn-text-small">+ View Course Description</a>
-      <div id="collapse-college-{{slug}}" class="collapse">
-              <p class="card__body">
-              {{ content }}
-              </p>
-            </div>
-          </div>
+          </a>
         </div>
-      </article>
-    </section>
-
-      {{ /collection:courses }}
-  </section>
       </div>
+      {{ /collection:courses }}
+    </div>
+  </div>
 </section>

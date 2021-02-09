@@ -60,6 +60,10 @@
           </li>
           <li>A <b>mailed learning kit</b> containing supplies for the course and an LSU t-shirt</li>
         </ul>
+        <p class="lead">Click on the course buttons below to learn more, or view our full course list here:</p>
+        <div class="col-lg-12 mt-3 mb-3 btn-container">
+          <a href="/courses?virtual" class="btn btn-outline-purple" role="button" style="font-size:1.3rem">View Virtual Courses</a>
+        </div>
       </div>
 
       <div class="col-lg-4 my-auto academy-image">
@@ -68,58 +72,22 @@
       </div>
     </div>
 
-
-    <section class="cards">
-    {{ collection:courses taxonomy:course_type="virtual-academy" }}
-
-      <section id="{{slug}}" class="mt-4 mb-4 w-full pl-1 pr-1">
-      <article class="h-full border border-black light-background">
-        <div class="card__inner">
-        	<div class="container" style="padding:0">
-        	  <div class="row">
-        	  	<div class="col-lg-12">
-	          	  	<div class="col-lg-8 btn-container" style="text-align:left;padding-left:0">
-		          		<p class="card__topic">{{course_type}}{{title}}{{/course_type}} | {{sponsor}}{{title}}{{/sponsor}}</p>
-          				<h3 class="card__title">{{ title }}</h3>
-		      		</div>
-		         	<div class="col-lg-4 btn-container">
-						<a class="btn btn-outline-purple btn-text-large m-2" role="button" href="/apply">Apply Now</a>
-		         	</div>
-	          	</div>
-	      	  </div>
-      		</div>
-          	<div class="container" style="padding:0">
-	          <div class="row">
-	          	<div class="col-lg-12">
-	          	  	<div class="col-lg-3 btn-container">
-		          		<p class="card__text"><b>Dates:</b> {{dates}}{{title}}{{/dates}}</p>
-		      		</div>
-		      		<div class="col-lg-3 btn-container">
-		          		<p class="card__text"><b>Time:</b> {{time}}{{title}}{{/time}}</p>
-		         	</div>
-                    <div class="col-lg-3 btn-container">
-						<p class="card__text"><b>Grades:</b> {{grade_level}}{{title}}{{/grade_level}}</p>
-		         	</div>
-		         	<div class="col-lg-3 btn-container">
-						<p class="card__text"><b>Tuition:</b> {{tuition}}{{title}}{{/tuition}}</p>
-		         	</div>
-	          	</div>
-	      	  </div>
-      		</div>
-      	  <div>
-			<a data-toggle="collapse" href="#collapse-college-{{slug}}" class="btn btn-outline-purple btn-text-small">+ View Course Description</a>
-			<div id="collapse-college-{{slug}}" class="collapse">
-              <p class="card__body">
-              {{ content }}
-              </p>
+    <div class="row">
+      {{ collection:courses taxonomy:course_type="virtual-academy" }}
+      <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+        <div class="card mb-4 box-shadow">
+          <a href="/courses#{{slug}}">
+          <div class="overlay-container">
+            <img src="/assets/img/coursePics/{{slug}}.jpg" alt="{{title}}-related stock image" class="overlay-image" style="width:100%">
+            <div class="overlay-middle">
+              <div class="overlay-text">{{title}}</div>
             </div>
           </div>
+          </a>
         </div>
-      </article>
-    </section>
-
-      {{ /collection:courses }}
-  </section>
+      </div>
+      {{ /collection:courses}}
+    </div>
       </div>
 
 <section class="grey-box">
@@ -130,6 +98,10 @@
         <h3 class="home-subheader">June - July | Middle and High School</h3>
         <h3 class="home-subheader"><b>Registration Opens Feburary 15th!</b></h3>
         <p class="lead">Sponsored by Departments across LSU's campus, our Educational Experiences are designed to provide fun, educational programs for middle and high schoolers during the summer.</p>
+        <p class="lead">Click on the course buttons below to learn more, or view our full course list here:</p>
+        <div class="col-lg-12 mt-3 mb-3 btn-container">
+          <a href="/courses?virtual" class="btn btn-outline-purple" role="button" style="font-size:1.3rem">View Virtual Courses</a>
+        </div>
       </div>
 
       <div class="col-lg-4 my-auto academy-image">
@@ -138,56 +110,22 @@
     </div>
 
 
-    <section class="cards">
+    <div class="row">
     {{ collection:courses taxonomy:course_type="virtual-experience" }}
-
-      <section id="{{slug}}" class="mt-4 mb-4 w-full pl-1 pr-1">
-      <article class="h-full border border-black light-background">
-        <div class="card__inner">
-          <div class="container" style="padding:0">
-            <div class="row">
-              <div class="col-lg-12">
-                  <div class="col-lg-8 btn-container" style="text-align:left;padding-left:0">
-                  <p class="card__topic">{{course_type}}{{title}}{{/course_type}} | {{sponsor}}{{title}}{{/sponsor}}</p>
-                  <h3 class="card__title">{{ title }}</h3>
-              </div>
-              <div class="col-lg-4 btn-container">
-            <a class="btn btn-outline-purple btn-text-large m-2" role="button" href="/apply">Apply Now</a>
-              </div>
-              </div>
-            </div>
-          </div>
-            <div class="container" style="padding:0">
-            <div class="row">
-              <div class="col-lg-12">
-                  <div class="col-lg-3 btn-container">
-                  <p class="card__text"><b>Dates:</b> {{dates}}{{title}}{{/dates}}</p>
-              </div>
-              <div class="col-lg-3 btn-container">
-                  <p class="card__text"><b>Time:</b> {{time}}{{title}}{{/time}}</p>
-              </div>
-                    <div class="col-lg-3 btn-container">
-            <p class="card__text"><b>Grades:</b> {{grade_level}}{{title}}{{/grade_level}}</p>
-              </div>
-              <div class="col-lg-3 btn-container">
-            <p class="card__text"><b>Tuition:</b> {{tuition}}{{title}}{{/tuition}}</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div>
-      <a data-toggle="collapse" href="#collapse-college-{{slug}}" class="btn btn-outline-purple btn-text-small">+ View Course Description</a>
-      <div id="collapse-college-{{slug}}" class="collapse">
-              <p class="card__body">
-              {{ content }}
-              </p>
-            </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+      <div class="card mb-4 box-shadow">
+        <a href="/courses#{{slug}}">
+        <div class="overlay-container">
+          <img src="/assets/img/coursePics/{{slug}}.jpg" alt="{{title}}-related stock image" class="overlay-image" style="width:100%">
+          <div class="overlay-middle">
+            <div class="overlay-text">{{title}}</div>
           </div>
         </div>
-      </article>
-    </section>
-
-      {{ /collection:courses }}
-  </section>
+        </a>
       </div>
+    </div>
+    {{ /collection:courses}}
+    </div>
+
+  </div>
 </section>
