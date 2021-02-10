@@ -3100,6 +3100,10 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     overflow: auto;
 }
 
+.table td{
+    vertical-align: middle;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;

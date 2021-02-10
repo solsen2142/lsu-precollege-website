@@ -13,8 +13,6 @@ structure:
       entry: 3fc79551-233c-4fc0-8955-63424b20e2c6
       children:
         -
-          entry: afa062ea-0456-4982-887c-8daf179f802b
-        -
           entry: cd3a98ac-73be-486a-9922-ef187a8c63cf
     -
       entry: 580997ef-dbe6-4ac8-b93e-00a30ad7be1c
@@ -54,3 +52,8 @@ structure:
       children:
         -
           entry: e3b320e2-6e17-4b00-a2bc-3c32896f5733
+    -
+      entry: ad99e853-b3c1-48ec-ae30-fa007d552a6f
+      children:
+        -
+          entry: afa062ea-0456-4982-887c-8daf179f802b
