@@ -2,40 +2,62 @@
 	<div class="container">
 	    <div class="row pt-4 pb-5">
 	      <div class="col-lg-12 ">
-	      	<h2 class="home-center">Registrations Will Open February 15th!</h2>
+	      	<h2 class="home-center">Applications Will Open February 15th!</h2>
+			
+			<p class="lead"><b>Once applications are open</b>, click on the buttons below to access your desired program's application. More information on tuition, deadlines, and policies can be found on our <b><a href="/courses/tuition">Tuition, Dates, and Policies</a></b> page. Please contact <a href="mailto:precollege@lsu.edu">precollege@lsu.edu</a> with any questions or concerns.</p>
 
-	      	<h2 class="home-header" style="padding-bottom:0; font-weight:700">On-Campus Courses</h2>
-	      	  <h3 class="home-subheader">July 2020 | Middle and High School | 4-6 hours per day</h3>
-	      	  <h3 class="home-subheader"><b>Registrations Opening Soon</b></h3>
-
-	        <p class="lead"><b>Tuition:</b> $1250 for 2 weeks</p>
-            <p class="lead"><b>Regular Application Deadline:</b> April 30th, 2021</p>
-	        <p class="lead"><b>Tuition Deposit:</b> For on-campus courses, we must receive your $500 tuition deposit with your online registration. The application fee is counted towards your tuition deposit balance.</p>
-	        <p class="lead"><b>Payment Deadline:</b> Full tuition payment must be made by May 15th, 2021.</p>
-            <p class="lead"><b>Scholarships & Finanicial Aid:</b> Unfortunately, we are unable to award financial aid or scholarships this summer.</p>
-	      </div>
-	      <div class="col-lg-12 mt-4 btn-container">
-	        <a class="btn btn-outline-purple btn-text-extra-large" role="button" target="_blank">Registration Opens February 15th</a>
-	      </div>
+			<div class="table-responsive">
+				<table class="table table-striped table-bordered table-hover">
+					<thead class="thead-dark">
+					<tr>
+						<th scope="col">Course</th>
+						<th scope="col">Registration Deadline</th>
+						<th scope="col">Application Link</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>
+							<b>Virtual Academy:</b>
+							<ul class="lead mb-0" style="text-align:left; font-size:1rem">
+								{{ collection:courses taxonomy:course_type="virtual-academy" }}
+								<li><a href="/courses#{{slug}}">{{title}}</a></li>
+								{{ /collection:courses }}
+							</ul>
+						</td>
+						<td><b>May 14, 2021</b></td>
+						<td><a class="btn btn-outline-purple" role="button" target="">Apply Now</a></td>
+					</tr>
+					<tr>
+						<td>
+							<b>Summer Academy (On-Campus):</b>
+							<ul class="lead mb-0" style="text-align:left; font-size:1rem">
+								{{ collection:courses taxonomy:course_type="on-campus-academy" }}
+								<li><a href="/courses#{{slug}}">{{title}}</a></li>
+								{{ /collection:courses }}
+							</ul>
+						</td>
+						<td><b>May 28, 2021</b></td>
+						<td><a class="btn btn-outline-purple" role="button" target="">Apply Now</a></td>
+					</tr>
+					<tr>
+						<td>
+							<b>Virtual and On-Campus Experiences:</b>
+							<ul class="lead mb-0" style="text-align:left; font-size:1rem">
+								<li><a href="/courses#exploring-stem-on-campus">Exploring STEM (On-Campus and Virtual)</li>
+								<li><a href="/courses#halliburton-xcite">Halliburton XCITE (On-Campus and Virtual)</a></li>
+								<li><a href="/courses#rehams">REHAMS Engineering (On-Campus and Virtual)</a></li>
+								<li><a href="/courses#explorecs-junior">eXploreCS Junior</a></li>
+								<li><a href="/courses#explorecs-high-school">eXploreCS High School</a></li>
+							</ul>
+						</td>
+						<td><b>April 25, 2021</b></td>
+						<td><a class="btn btn-outline-purple" role="button" target="">Apply Now</a></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		  </div>
 	    </div>
 	</div>
 </section>
-
-<div class="container" style="padding-top:2rem; padding-bottom: 2rem">
-	<div class="row pt-2 pb-4">
-	      <div class="col-lg-12 ">
-
-	      <h2 class="home-header pt-4" style="padding-bottom:0; font-weight:700">Virtual Courses</h2>
-	      	  <h3 class="home-subheader">June 28th - July 16th | High School | 2-3 hours per day</h3>
-	      	  <h3 class="home-subheader"><b>Registrations Opening Soon</b></h3>
-
-	        <p class="lead"><b>Tuition:</b> $895 for 3 weeks</p>
-            <p class="lead"><b>Regular Application Deadline:</b> April 30th, 2021</p>
-	        <p class="lead"><b>Payment Deadline:</b> For virtual courses, the full tuition amount must be paid on submission of this form; this secures your seat in the course.</p>
-			<p class="lead"><b>Scholarships & Financial Aid:</b> Unfortunately, we are unable to award financial aid or scholarships this summer.</p>
-	      </div>
-	      <div class="col-lg-12 mt-4 mb-2 btn-container">
-	        <a class="btn btn-outline-purple btn-text-extra-large" role="button" target="_blank">Registration Opens February 15th</a>
-	      </div>
-	    </div>
-</div>
