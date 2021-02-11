@@ -1,7 +1,7 @@
 ---
-title: 'Halliburton XCITE'
+title: 'Halliburton XCITE (On-Campus)'
 grade_level:
-  - high-school
+  - current-8th-11th-female
 course_type:
   - on-campus-experience
 dates:
@@ -11,14 +11,14 @@ subject_area:
 time:
   - tbd
 tuition:
-  - tbd
+  - usd350
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612563009
+updated_at: 1613065427
 sponsor:
   - lsu-college-of-engineering
 simplified_type:
   - on-campus
 id: 813f4717-dc9d-4e18-948a-bcccb6477b43
 ---
-<b>GPA Required:</b> 2.9 or greater<br><br>
-The LSU College of Engineering is proud to offer the Halliburton XCITE residential engineering summer camp to qualified 8th, 9th, 10th and 11th grade, female students. This program gives girls the chance to explore, create, experiment, build, code, design, and compete in a variety of engineering and college preparatory activities. The camp is held on LSU’s Baton Rouge campus where college faculty and college students interact with attendees through a number of hands-on workshops and activities. The signature event is the week-long "Design Project Competition" in which students compete in teams to design, build, and present a project.
+<b>GPA Required:</b> 3.0 or greater<br><br>
+The LSU Halliburton eXploration Camp Inspiring Tomorrow’s Engineers (XCITE) camp is a 5-day commuter camp for rising 9th-12th grade female students to encourage them to pursue engineering/computer science/construction management careers. Students will explore, create, experiment, build, code, design, and compete while learning about a variety of engineering majors and college life. LSU faculty and engineering students will interact with attendees in Engineering 101 information sessions and activities. Highlights of the XCITE program: Engineering Design Projects; Introduction to College Life; Teamwork and Leadership Activities; Panel discussion female engineers; and virtual field trip to a refinery or chemical plant. Reduced fees are available with demonstrated need.

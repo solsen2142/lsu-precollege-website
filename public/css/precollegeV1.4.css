@@ -3078,7 +3078,7 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     max-width:800px
 }
 
-.homepageTitle{
+.homepageTitle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3094,14 +3094,23 @@ input#btnsubmit.sectionHeader.ff-btn-submit {
     max-width:800px
 }
 
-.scrollBox{
+.scrollBox {
     border: 2px;
     height: 1000px;
     overflow: auto;
 }
 
-.table td{
+.table td {
     vertical-align: middle;
+}
+
+.table .thead-dark th {
+    background-color: #461d7c;
+    border-color: rgba(163,154,172,0.5);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(163,154,172,0.5);
 }
 
 ::-webkit-scrollbar {
