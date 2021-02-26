@@ -9,11 +9,11 @@ dates:
 subject_area:
   - engineering
 time:
-  - tbd
+  - afternoon-1pm-3pm
 tuition:
   - usd895
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612563033
+updated_at: 1614356548
 sponsor:
   - lsu-college-of-engineering
 simplified_type:

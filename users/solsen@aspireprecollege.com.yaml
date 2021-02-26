@@ -12,3 +12,4 @@ preferences:
         - title
         - slug
         - simplified_type
+        - time

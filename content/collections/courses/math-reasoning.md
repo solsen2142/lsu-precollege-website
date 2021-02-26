@@ -9,11 +9,11 @@ dates:
 subject_area:
   - mathematics
 time:
-  - all-day-9am-3pm
+  - 9am-3pm
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1613084972
+updated_at: 1614356653
 sponsor:
   - lsu-college-of-science
 simplified_type:

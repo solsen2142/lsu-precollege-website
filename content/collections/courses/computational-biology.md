@@ -9,11 +9,11 @@ dates:
 subject_area:
   - biology
 time:
-  - tbd
+  - morning-10am-12pm
 tuition:
   - usd895
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612568741
+updated_at: 1614356446
 simplified_type:
   - virtual
 id: 511b7b45-178b-4d6b-8cda-7b81e2f1a62d

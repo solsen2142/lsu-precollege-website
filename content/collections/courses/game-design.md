@@ -9,11 +9,11 @@ dates:
 subject_area:
   - computer-science
 time:
-  - tbd
+  - afternoon-1pm-3pm
 tuition:
   - usd895
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612563000
+updated_at: 1614356510
 simplified_type:
   - virtual
 id: 7741c05d-efd2-42ab-b6bf-06446d9e6bf5

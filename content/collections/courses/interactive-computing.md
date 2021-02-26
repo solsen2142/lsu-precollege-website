@@ -9,11 +9,11 @@ dates:
 subject_area:
   - computer-science
 time:
-  - all-day-9am-3pm
+  - 9am-3pm
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1612563019
+updated_at: 1614356676
 simplified_type:
   - on-campus
 id: 79a1326e-fe38-416e-93ee-dc7f633eb331
