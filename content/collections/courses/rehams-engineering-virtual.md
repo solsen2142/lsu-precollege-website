@@ -9,7 +9,7 @@ dates:
 subject_area:
   - engineering
 time:
-  - tbd
+  - 8am-5pm
 tuition:
   - usd225
 sponsor:
@@ -17,7 +17,7 @@ sponsor:
 simplified_type:
   - virtual
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614620343
+updated_at: 1614627058
 application_link:
   - rehams-xcite
 id: 42e0fd9f-93f7-4a6a-9781-07ce05646aeb

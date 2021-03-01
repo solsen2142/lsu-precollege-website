@@ -1,7 +1,7 @@
 ---
 title: 'REHAMS Engineering (On-Campus)'
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614620333
+updated_at: 1614627050
 grade_level:
   - 10th-12th
 course_type:
@@ -11,7 +11,7 @@ dates:
 subject_area:
   - engineering
 time:
-  - tbd
+  - 8am-5pm
 tuition:
   - usd350
 sponsor:
