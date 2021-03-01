@@ -13,11 +13,13 @@ time:
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614356705
+updated_at: 1614620291
 sponsor:
   - lsu-college-of-science
 simplified_type:
   - on-campus
+application_link:
+  - summer-academy
 id: 0b9b9fa0-f7dc-43be-8438-127d7bcef32f
 ---
 <b>To Prepare For:</b> High School Biology, AP Environmental Science<br><br>

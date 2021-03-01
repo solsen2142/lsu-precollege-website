@@ -12,4 +12,4 @@ preferences:
         - title
         - slug
         - simplified_type
-        - time
+        - application_link

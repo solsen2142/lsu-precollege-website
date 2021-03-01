@@ -10,6 +10,7 @@ taxonomies:
   - tuition
   - sponsor
   - simplified_type
+  - application_link
 revisions: false
 sort_dir: asc
 date_behavior:

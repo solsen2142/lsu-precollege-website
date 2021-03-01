@@ -17,7 +17,9 @@ sponsor:
 simplified_type:
   - virtual
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1613155252
+updated_at: 1614620323
+application_link:
+  - rehams-xcite
 id: c97b5864-8b70-4daa-a33a-7f2df1ab976e
 ---
 <b>GPA Required:</b> 3.0 or greater<br><br>

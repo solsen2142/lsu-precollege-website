@@ -13,9 +13,11 @@ time:
 tuition:
   - usd895
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614356446
+updated_at: 1614620505
 simplified_type:
   - virtual
+application_link:
+  - virtual-academy
 id: 511b7b45-178b-4d6b-8cda-7b81e2f1a62d
 ---
 <b>For Careers in:</b> Medicine, Biology, Computer Science<br><br>

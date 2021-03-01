@@ -13,11 +13,13 @@ time:
 tuition:
   - usd895
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614356548
+updated_at: 1614620366
 sponsor:
   - lsu-college-of-engineering
 simplified_type:
   - virtual
+application_link:
+  - virtual-academy
 id: 33f5d949-929b-41de-8420-e6d1d63570ad
 ---
 <b>For Careers in:</b> All Engineering Disciplines<br><br>

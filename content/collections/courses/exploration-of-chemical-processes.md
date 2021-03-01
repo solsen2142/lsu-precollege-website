@@ -13,11 +13,13 @@ time:
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614356694
+updated_at: 1614620302
 sponsor:
   - lsu-college-of-science
 simplified_type:
   - on-campus
+application_link:
+  - summer-academy
 id: 508deed9-357e-481a-8eff-5d01cc99d0c9
 ---
 <b>To Prepare For:</b> High School Chemistry<br><br>

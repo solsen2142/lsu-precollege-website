@@ -1,7 +1,7 @@
 ---
 title: 'Math Circle: Conducting Mathematical Research'
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614356528
+updated_at: 1614620210
 grade_level:
   - high-school
 dates:
@@ -18,6 +18,8 @@ sponsor:
   - lsu-college-of-science
 simplified_type:
   - virtual
+application_link:
+  - virtual-academy
 id: e7fba765-9417-419a-aae4-2939210b9b7d
 ---
 <b>For Careers in:</b> Mathematics, Statistics, Finance<br><br>

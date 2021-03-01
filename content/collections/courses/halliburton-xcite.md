@@ -13,11 +13,13 @@ time:
 tuition:
   - usd350
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1613155262
+updated_at: 1614620314
 sponsor:
   - lsu-college-of-engineering
 simplified_type:
   - on-campus
+application_link:
+  - rehams-xcite
 id: 813f4717-dc9d-4e18-948a-bcccb6477b43
 ---
 <b>GPA Required:</b> 3.0 or greater<br><br>

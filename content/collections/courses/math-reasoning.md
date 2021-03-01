@@ -13,11 +13,13 @@ time:
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614356653
+updated_at: 1614620398
 sponsor:
   - lsu-college-of-science
 simplified_type:
   - on-campus
+application_link:
+  - summer-academy
 id: 358c376a-6275-4d42-ad5c-ec0a25e05a4a
 ---
 <b>To Prepare For:</b> Algebra 1, Geometry, Algebra 2, Precalculus<br><br>
