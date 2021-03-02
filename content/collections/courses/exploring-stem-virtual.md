@@ -14,11 +14,11 @@ subject_area:
   - computer-science
   - physics
 time:
-  - tbd
+  - 9am-12pm
 tuition:
   - usd350
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614620257
+updated_at: 1614701062
 sponsor:
   - lsu-college-of-engineering
 simplified_type:
