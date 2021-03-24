@@ -5,7 +5,7 @@ grade_level:
 course_type:
   - on-campus-experience
 dates:
-  - june-21-june-25
+  - june-14th-june-18th
 subject_area:
   - biology
   - chemistry
@@ -18,7 +18,7 @@ time:
 tuition:
   - usd450
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614701051
+updated_at: 1616622707
 sponsor:
   - lsu-college-of-engineering
 simplified_type:

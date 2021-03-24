@@ -5,7 +5,7 @@ grade_level:
 course_type:
   - virtual-experience
 dates:
-  - june-7th-june-11th
+  - june-21-june-25
 subject_area:
   - engineering
   - mathematics
@@ -18,7 +18,7 @@ time:
 tuition:
   - usd350
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614701062
+updated_at: 1616622722
 sponsor:
   - lsu-college-of-engineering
 simplified_type:
