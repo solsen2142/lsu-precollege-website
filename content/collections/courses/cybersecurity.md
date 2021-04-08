@@ -5,7 +5,7 @@ grade_level:
 course_type:
   - on-campus-academy
 dates:
-  - july-19th-july-30th
+  - july-6th-july-16th
 subject_area:
   - computer-science
 time:
@@ -15,7 +15,7 @@ tuition:
 simplified_type:
   - on-campus
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614620196
+updated_at: 1617891963
 application_link:
   - summer-academy
 id: e159ba71-a3cb-45b2-aeb3-95223cce00e8

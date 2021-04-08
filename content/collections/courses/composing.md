@@ -5,13 +5,13 @@ grade_level:
 course_type:
   - on-campus-academy
 dates:
-  - july-19th-july-30th
+  - june-14-june-25
 time:
   - 9am-3pm
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614620352
+updated_at: 1617891872
 subject_area:
   - music
   - computer-science
