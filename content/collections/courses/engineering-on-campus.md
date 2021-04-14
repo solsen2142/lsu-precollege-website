@@ -5,7 +5,7 @@ grade_level:
 course_type:
   - on-campus-academy
 dates:
-  - july-19th-july-30th
+  - june-14-june-25
 subject_area:
   - engineering
 time:
@@ -13,7 +13,7 @@ time:
 tuition:
   - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614620388
+updated_at: 1618427607
 sponsor:
   - lsu-college-of-engineering
 simplified_type:
