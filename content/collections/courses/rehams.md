@@ -1,7 +1,7 @@
 ---
 title: 'REHAMS Engineering (On-Campus)'
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
-updated_at: 1614627050
+updated_at: 1620061827
 grade_level:
   - 10th-12th
 course_type:
@@ -19,7 +19,7 @@ sponsor:
 simplified_type:
   - on-campus
 application_link:
-  - rehams-xcite
+  - apply
 id: b198a7eb-59b8-4d48-82d9-2e65d795e786
 ---
 <b>GPA Required:</b> 3.0 or greater<br><br>
