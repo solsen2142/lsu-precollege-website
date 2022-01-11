@@ -13,7 +13,7 @@ course_type:
 time:
   - morning-10am-12pm
 tuition:
-  - $895
+  - usd895
 sponsor:
   - lsu-college-of-science
 simplified_type:

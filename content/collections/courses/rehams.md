@@ -13,7 +13,7 @@ subject_area:
 time:
   - 8am-5pm
 tuition:
-  - $600
+  - usd600
 sponsor:
   - lsu-college-of-engineering
 simplified_type:

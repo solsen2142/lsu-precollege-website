@@ -11,7 +11,7 @@ subject_area:
 time:
   - afternoon-1pm-3pm
 tuition:
-  - $2950
+  - usd2950
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
 updated_at: 1614620225
 simplified_type:

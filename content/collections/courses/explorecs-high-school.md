@@ -11,7 +11,7 @@ subject_area:
 time:
   - 9am-4pm
 tuition:
-  - $450
+  - usd450
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
 updated_at: 1620061779
 sponsor:
