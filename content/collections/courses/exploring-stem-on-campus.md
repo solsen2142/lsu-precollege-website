@@ -1,11 +1,11 @@
 ---
-title: 'Exploring STEM'
+title: 'Exploring STEM (On-Campus)'
 grade_level:
   - middle-school
 course_type:
   - on-campus-experience
 dates:
-  - june-27-july-1
+  - june-14th-june-18th
 subject_area:
   - biology
   - chemistry

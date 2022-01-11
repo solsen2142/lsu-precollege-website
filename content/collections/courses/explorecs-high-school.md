@@ -5,7 +5,7 @@ grade_level:
 course_type:
   - on-campus-experience
 dates:
-  - may-30-june-3
+  - june-14th-june-18th
 subject_area:
   - computer-science
 time:

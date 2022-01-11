@@ -5,13 +5,13 @@ grade_level:
 course_type:
   - on-campus-academy
 dates:
-  - july-10-july-23
+  - june-14-june-25
 subject_area:
   - biology
 time:
   - 9am-3pm
 tuition:
-  - usd2950
+  - usd1250
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
 updated_at: 1617891889
 sponsor:
