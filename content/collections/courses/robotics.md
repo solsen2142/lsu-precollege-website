@@ -5,14 +5,14 @@ grade_level:
 course_type:
   - on-campus-academy
 dates:
-  - july-6th-july-16th
+  - july-10-july-23
 subject_area:
   - engineering
   - computer-science
 time:
   - 9am-3pm
 tuition:
-  - usd1250
+  - $2950
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
 updated_at: 1617891951
 simplified_type:

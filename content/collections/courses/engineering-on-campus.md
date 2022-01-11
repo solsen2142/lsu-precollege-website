@@ -1,17 +1,17 @@
 ---
-title: 'Intro to Engineering (On-Campus)'
+title: 'Intro to Engineering'
 grade_level:
   - high-school
 course_type:
   - on-campus-academy
 dates:
-  - june-14-june-25
+  - july-10-july-23
 subject_area:
   - engineering
 time:
   - 9am-3pm
 tuition:
-  - usd1250
+  - $2950
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
 updated_at: 1618427607
 sponsor:

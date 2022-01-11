@@ -5,13 +5,13 @@ grade_level:
 course_type:
   - on-campus-experience
 dates:
-  - june-7th-june-11th
+  - june-6-june-10
 subject_area:
   - computer-science
 time:
   - 9am-4pm
 tuition:
-  - usd450
+  - $450
 updated_by: 70be348e-36d9-4d70-82ce-0b173a724d68
 updated_at: 1620061789
 sponsor:
