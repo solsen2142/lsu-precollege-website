@@ -1,3 +1,0 @@
-title: Tags
-template: blog/taxonomy
-route: '/blog/tags/{slug}'
