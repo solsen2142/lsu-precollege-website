@@ -1,0 +1,18 @@
+title: Courses
+template: default
+layout: layout
+taxonomies:
+  - grade_level
+  - dates
+  - subject_area
+  - course_type
+  - time
+  - tuition
+  - sponsor
+  - simplified_type
+  - application_link
+revisions: false
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

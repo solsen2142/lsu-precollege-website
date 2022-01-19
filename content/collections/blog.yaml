@@ -1,0 +1,7 @@
+template: blog/post
+route: '/blog/{year}/{month}/{day}/{slug}'
+date: true
+date_behavior:
+  past: public
+  future: unlisted
+sort_dir: desc
